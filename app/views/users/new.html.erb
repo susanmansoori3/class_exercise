@@ -1,0 +1,23 @@
+<h1>Sign Up</h1>
+<body>
+
+<div class="body"></div>
+	<div class="grad"></div>
+		<div class="header">
+			<div>Sign Up</div>
+		</div>
+		<br>
+		<div class="login">
+			<%= form_for @user do |f| %>
+            <%= f.text_field :first_name, placeholder: "first name" %><br /><br />
+            <%= f.text_field :last_name, placeholder: "last name" %><br /><br />
+            <%= f.text_field :email, placeholder: "email" %><br />
+            <%= f.password_field :password, placeholder: "password" %><br />
+            <%= f.password_field :password_confirmation, placeholder: "password confirmation" %><br />
+            <%= f.submit "SAVE"%>
+        <% end %>
+    </div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+</body>

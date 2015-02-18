@@ -1,0 +1,16 @@
+<h3> <%= @user_created_message %> </h3>
+
+
+<h1>Log in</h1>
+
+<!-- Because your @user will post back to user, we need
+to write code to change that. It's a form FOR a user so
+it looks for the User -->
+
+<%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %>
+    <%= f.text_field :email %><br />
+    <%= f.password_field :password %><br />
+    <%= f.submit %>
+<% end %>
+
+<%= link_to 'New user? Create an account here', new_user_path %>

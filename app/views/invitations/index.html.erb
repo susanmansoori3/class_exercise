@@ -1,0 +1,18 @@
+<h1>DASHBOARD</h1>
+
+<br />
+
+<%= link_to 'New Project', new_invitation_path %>
+
+<table class="table table-striped">
+  <tbody>
+    <% @invitations.each do |i| %>
+      <tr>
+        <td><%= link_to i.title, invitation_path(i) %></td>
+        <td><%= i.description %></td>
+        <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
+        <td><%= link_to 'Delete', i, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

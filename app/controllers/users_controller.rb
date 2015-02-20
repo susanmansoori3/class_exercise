@@ -39,7 +39,7 @@ class UsersController < ApplicationController
   def show
     #Because user is already defined in the User Controller, you can use that here.
     @user = User.find(params[:id])
-    @invitation = Invitation.find(params[:id])
+   # @invitation = Invitation.find(params[:id])
   end
 
   def edit

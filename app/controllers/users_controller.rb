@@ -46,7 +46,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @invitation = Invitation.where(id: params[:id]).first
     @invitation.destroy
+    redirect_to user_path(:id => @user_id)
   end
 
   private

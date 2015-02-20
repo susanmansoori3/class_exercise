@@ -1,14 +1,17 @@
 require 'bcrypt'
-class User < ActiveRecord::Base
-	has_secure_password
-  has_many :photos
-  # From the perspective of a user, they might have sent out many invitations
-  # Because the foreign key does not match the model name, we need to specify 3 additional
-  # things in order to make this association... class_name, foreign_key, and inverse_of
-  # inverse_of from the perspective of a has_many should call out the name of the corresponding
-  # belongs_to!
-	has_many :inviter_invitations, :class_name => "Invitation", foreign_key: :inviter_id, inverse_of: :inviter
 
-	has_many :invitee_invitations, :class_name => "Invitation", foreign_key: :invitee_id, inverse_of: :invitee
+class User < ActiveRecord::Base
+	
+  has_secure_password
+  has_many :photos
+
+  has_many :invitations
+
+  validates_presence_of :first_name
+  validates_presence_of :last_name
+  validates_uniqueness_of :email
+  validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+  validates_length_of :email, maximum: 255
+  validates_presence_of :password_digest
 
 end

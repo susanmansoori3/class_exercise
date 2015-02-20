@@ -19,12 +19,16 @@ class SessionsController < ApplicationController
   		# set the session to the browser. saving the session id here, not saving it in the database but here as a cookie
   		# Session - intrinsic to rails and is a baked in rails property, different from the sessions we made
   		session["user_id"] = u.id.to_s
-  		redirect_to invitations_path
+  		redirect_to user_path(u)
+    else
+      redirect_to new_sessions_path
   end
 end
 
   def destroy
   	session.destroy
-    redirect_to new_session_path
+    redirect_to new_sessions_path
   end
 end
+
+

@@ -1,2 +1,30 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
+
+	<%# @invitations.each do |i| %>
+	<%#= i.title %>
+	<%# end %>
+
+
+<h1>DASHBOARD</h1>
+
+<br />
+
+<%#= @current_user.id %>
+
+
+
+<%#= current_user.id %>
+<%= link_to 'New Project', new_invitation_path %>
+<table class="table table-striped">
+  <tbody>
+    <% @user.invitations.each do |i| %>
+      <tr>
+        <td><%= link_to i.title, invitation_path(i) %></td>
+        <td><%= i.description %></td>
+        <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
+        <td><%= link_to 'Delete', invitations_path(i), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

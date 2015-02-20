@@ -9,12 +9,15 @@
 		<br>
 		<div class="login">
 			<%= form_for @user do |f| %>
-            <%= f.text_field :first_name, placeholder: "first name" %><br /><br />
-            <%= f.text_field :last_name, placeholder: "last name" %><br /><br />
-            <%= f.text_field :email, placeholder: "email" %><br />
-            <%= f.password_field :password, placeholder: "password" %><br />
-            <%= f.password_field :password_confirmation, placeholder: "password confirmation" %><br />
-            <%= f.submit "SAVE"%>
+              <% flash.each do |name, msg| -%>
+            <%= content_tag :div, msg, class: name %>
+            <% end %>
+                <%= f.text_field :first_name, placeholder: "first name" %><br /><br />
+                <%= f.text_field :last_name, placeholder: "last name" %><br /><br />
+                <%= f.text_field :email, placeholder: "email" %><br />
+                <%= f.password_field :password, placeholder: "password" %><br />
+                <%= f.password_field :password_confirmation, placeholder: "password confirmation" %><br />
+                <%= f.submit "SAVE"%>
         <% end %>
     </div>
 

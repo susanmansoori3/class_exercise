@@ -8,6 +8,9 @@ to write code to change that. It's a form FOR a user so
 it looks for the User -->
 
 <%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %>
+  <% flash.each do |name, msg| -%>
+  <%= content_tag :div, msg, class: name %>  
+  <% end %>
     <%= f.text_field :email %><br />
     <%= f.password_field :password %><br />
     <%= f.submit %>

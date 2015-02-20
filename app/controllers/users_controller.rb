@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   def index
   	@users = User.all
+    #user? or "user"
+    # PageMailer.visit_happened("user").deliver
+    # UserMailer.visit_happened("person").deliver
   end
 
   def new
@@ -8,12 +11,15 @@ class UsersController < ApplicationController
   end
 
   def create
-  	user = User.new(params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation))
-    	if user.save
-    		# Interest of time
-    		redirect_to new_sessions_path
-    	end
-  end
+    @user = User.new(user_params)
+    if @user.save
+      # Interest of time
+      redirect_to new_sessions_path
+    else
+      flash[:notice] = @user.errors.full_messages.to_sentence
+      redirect_to new_user_path
+    end
+    end
     # POST /users
   # POST /users.json
  
@@ -31,9 +37,21 @@ class UsersController < ApplicationController
 #     end
 # end
   def show
+    #Because user is already defined in the User Controller, you can use that here.
+    @user = User.find(params[:id])
+    @invitation = Invitation.find(params[:id])
   end
 
   def edit
+  end
+
+  def destroy
+    @invitation.destroy
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
   end
 end
 

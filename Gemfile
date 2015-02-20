@@ -5,7 +5,7 @@ group :development do
  gem "better_errors" 
 end
 
-gem 'angular-rails-templates'
+
 
 gem 'httparty', '0.11.0'
 

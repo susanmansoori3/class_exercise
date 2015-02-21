@@ -23,7 +23,7 @@
         <td><%= link_to i.title, invitation_path(i) %></td>
         <td><%= i.description %></td>
         <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
-        <td><%= link_to 'Delete', invitations_path(i), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Delete', invitation_path(i), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>

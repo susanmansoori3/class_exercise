@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'response/show'
+
   root to: 'sessions#new'
   delete '/sessions' => 'sessions#destroy', as: 'logout'
   #this could also be: because it's only ever ONE session make it resource!!
@@ -8,6 +10,8 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :new, :create, :show]
   #multiple of something means index
   resources :invitations, only: [:index, :edit, :update, :destroy, :new, :create, :show]
+
+  # resources :responses, only [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

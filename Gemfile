@@ -5,6 +5,10 @@ group :development do
  gem "better_errors" 
 end
 
+gem 'figaro'
+
+gem 'aws-sdk'
+
 gem 'rails_12factor'
 
 gem 'httparty', '0.11.0'

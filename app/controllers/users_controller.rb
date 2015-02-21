@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   	@users = User.all
     #user? or "user"
     # PageMailer.visit_happened("user").deliver
-    # UserMailer.visit_happened("person").deliver
+    UserMailer.visit_happened("person").deliver
   end
 
   def new

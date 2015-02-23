@@ -1,29 +1,33 @@
-<h1>We Card</h1>
-
 <body>
+<div class = "index">
 
+<h1>We Card</h1>
   <button class="btn">
     <%= link_to 'Login', new_sessions_path %>
   </button>
   <button class="btn">
     <%= link_to 'Sign Up', new_user_path %>
   </button>
+</div>
+
+
+
+
+
+
 
 
 </body>
 
-<% @users.each do |user| %>
+<%# @users.each do |user| %>
   <tr>
-  <td><%= user.id %></td>
-    <td><%= user.first_name %></td>
-    <td><%= user.last_name %></td>
+  <td><%#= user.id %></td>
+    <td><%#= user.first_name %></td>
+    <td><%#= user.last_name %></td>
     <%#= link_to 'More Details', user_path(user) %>
   </tr>
-<% end %>
+<%# end %>
 
-<h1>Home Page</h1>
-Welcome<br>
-This should trigger some email
 
 
 

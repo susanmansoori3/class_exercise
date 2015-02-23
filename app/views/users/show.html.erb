@@ -1,5 +1,3 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
 
 	<%# @invitations.each do |i| %>
 	<%#= i.title %>
@@ -22,6 +20,7 @@
       <tr>
         <td><%= link_to i.title, invitation_path(i) %></td>
         <td><%= i.description %></td>
+        <td><%= i.recipient %></td>
         <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
         <td><%= button_to 'Delete', invitation_path(i), method: :delete %></td>
       </tr>

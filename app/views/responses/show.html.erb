@@ -1,16 +1,15 @@
-<h1>Response#show</h1>
-<p>Find me in app/views/response/show.html.erb</p>
-
-
-<h3>Hi there, <%= @invitee_name %>!
-Upload your snippet for <%= @invitation.title %> </h3>
+<h3>Hi there, <%= @response.invitee_name %>! <br /><br />
+Upload your snippet for <%= @invitation.title %> <br />
+What's this about? <%= @invitation.description %> </h3>
 
 <br />
 
 <%= form_for (@invitation) do |f| %>
 
+<br />
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Upload Video" %>
   </div>
 
 <% end %>

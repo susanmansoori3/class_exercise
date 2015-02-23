@@ -18,6 +18,7 @@ class ResponsesController < ApplicationController
   def show
   	@response = Response.find(params[:id])
     @invitation = Invitation.where(id:params[:invitation_id]).first
+    #user = User.find(params[:id]) figure out how to include user who sent it
   end
 
 end

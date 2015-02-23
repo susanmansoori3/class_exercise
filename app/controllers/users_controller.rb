@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       flash[:notice] = @user.errors.full_messages.to_sentence
       redirect_to new_user_path
     end
-    end
+  end
     # POST /users
   # POST /users.json
  

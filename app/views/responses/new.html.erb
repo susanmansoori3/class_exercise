@@ -1,0 +1,18 @@
+<%= form_for [@invitation, @response] do |f| %>
+
+  <br />
+    <div class="field">
+    <%= f.label :invitee_name %><br>
+    <%= f.text_field :invitee_name %>
+  </div>
+  <br />
+    <div class="field">
+    <%= f.label :invitee_email %><br>
+    <%= f.text_field :invitee_email %>
+  </div>
+  <br />
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  
+<% end %>

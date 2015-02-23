@@ -1,5 +1,5 @@
 
-<tbody>
+
     
 
 <h1>WeCard Project Name:<%= @invitation.title %></h1>
@@ -10,13 +10,16 @@
     <h4>Your collaborators are:</h2>
     
     <table class="table table-striped">
+  		<% @invitation.responses.each do |r| %>
+
   		<tr>
-  			<td>Person 1 Name: <%= @invitation.invitee_name %></td>
-    		<td>Person 1 Email: <%= @invitation.invitee_email %></td>
+  			<td>Person 1 Name: <%= r.invitee_name %></td>
+    		<td>Person 1 Email: <%= r.invitee_email %></td>
   		</tr>
 
+  		<% end %>
 
+</table>
 
-</tbody>
-
+<%= link_to 'Add Response', new_invitation_response_path(@invitation) %>
 

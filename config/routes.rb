@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   #this provides a smaller attack surface when making only certain routes
   resources :users, only: [:index, :new, :create, :show]
   #multiple of something means index
-  resources :invitations, only: [:index, :edit, :update, :destroy, :new, :create, :show]
-
+  resources :invitations, only: [:index, :edit, :update, :destroy, :new, :create, :show] do
+      resources :responses, only: [:new, :create, :show]
+    end 
   # resources :responses, only [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.

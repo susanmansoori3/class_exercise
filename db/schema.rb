@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221002932) do
+ActiveRecord::Schema.define(version: 20150221223227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,9 @@ ActiveRecord::Schema.define(version: 20150221002932) do
   create_table "invitations", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "recipient"
-    t.string   "invitee_name"
-    t.string   "invitee_email"
     t.integer  "user_id"
   end
 
@@ -31,9 +29,14 @@ ActiveRecord::Schema.define(version: 20150221002932) do
 
   create_table "responses", force: :cascade do |t|
     t.string   "video_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "invitee_name"
+    t.string   "invitee_email"
+    t.integer  "invitation_id"
   end
+
+  add_index "responses", ["invitation_id"], name: "index_responses_on_invitation_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -46,4 +49,5 @@ ActiveRecord::Schema.define(version: 20150221002932) do
   end
 
   add_foreign_key "invitations", "users"
+  add_foreign_key "responses", "invitations"
 end

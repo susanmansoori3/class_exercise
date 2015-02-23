@@ -5,11 +5,12 @@
 <h3>Hi there, <%= @invitee_name %>!
 Upload your snippet for <%= @invitation.title %> </h3>
 
-<%= form_for(@invitation) do |f| %>
+<br />
 
+<%= form_for (@invitation) do |f| %>
 
-  <br />
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

@@ -3,16 +3,34 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.index {
-	height: 600px;
-	width: 100%;
-	background-color: pink;
-}
+// .index {
+// 	height: 600px;
+// 	width: 100%;
+// 	background-color: pink;
+// }
 
 h1 {
 	text-align: center;
+
 }
 
+h2 {
+	text-align: center;
+
+}
+
+.btn {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.index {
+	background-image: url(wecard-background.jpg);
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	background-size: 100%;
+}
 
 .container {
 	left: 0px;

@@ -1,20 +1,11 @@
+<div class = "containerInv">
+  <%= render 'navbar' %>
+    <div class="dashboard">
+      <h1>DASHBOARD</h1>
 
-	<%# @invitations.each do |i| %>
-	<%#= i.title %>
-	<%# end %>
-
-
-<h1>DASHBOARD</h1>
-
-<br />
-
-<%#= @current_user.id %>
-
-
-
-<%#= current_user.id %>
 <%= link_to 'New Project', new_invitation_path %>
-<table class="table table-striped">
+
+      <table class="table table-striped">
   <tbody>
     <% @user.invitations.each do |i| %>
       <tr>
@@ -27,3 +18,6 @@
     <% end %>
   </tbody>
 </table>
+
+    </div>
+</div>

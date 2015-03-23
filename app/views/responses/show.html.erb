@@ -1,15 +1,19 @@
-<h3>Hi there, <%= @response.invitee_name %>! <br /><br />
-Upload your snippet for <%= @invitation.title %> <br />
-What's to record? <%= @invitation.description %> </h3>
+<h1>GUEST RESPONSE</h1>
 
-<br />
+	<%= form_for (@invitation) do |f| %>
 
-<%= form_for (@invitation) do |f| %>
+    <% if %>
+	<%= javascript_include_tag "webcam.js" %>
 
-<br />
+	<% end %>
 
   <div class="actions">
     <%= f.submit "Upload Video" %>
   </div>
 
+
 <% end %>
+
+  <video id="player" autoplay="true"></video>
+
+

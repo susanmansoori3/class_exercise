@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.2.0'
 
+gem "paperclip", "~> 4.2"
+
 group :development do   
  gem "better_errors" 
 end

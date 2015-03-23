@@ -9,5 +9,6 @@ class ResponseMailer < ApplicationMailer
     @greeting = "Hi"
     @response = response
     mail to: "suzanmeryam@gmail.com"
+    # mail(to: @invitee_email, subject: 'You\'ve been invited')
   end
 end

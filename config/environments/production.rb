@@ -14,8 +14,8 @@ Rails.application.configure do
   :storage => :s3,
   :s3_credentials => {
     :bucket => ENV['wecardvids'],
-    :access_key_id => ENV['AKIAIORHWDJJ2VH55FIQ'],
-    :secret_access_key => ENV['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']
+    :access_key_id => ENV['S3_ACCESS_KEY'],
+    :secret_access_key => ENV['SECRET_KEY']
   }
 }
   config.action_mailer.default_url_options = { :host => 'we-card.heroku.com' }

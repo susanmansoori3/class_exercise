@@ -5,14 +5,28 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.action_mailer.delivery_method = :smtp
+  
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
-  port:                 587,
-  domain:               'gmail.com',
-  user_name:            ENV["GMAIL_USER_NAME"],
-  password:             ENV["GMAIL_PASSWORD"],
-  authentication:       'plain',
-  enable_starttls_auto: true  }
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+    user_name:            ENV["GMAIL_USER_NAME"],
+    password:             ENV["GMAIL_PASSWORD"],
+    authentication:       'plain',
+    enable_starttls_auto: true  
+  }
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+    :bucket => ENV['wecardvids'],
+    :access_key_id => ENV['AKIAIORHWDJJ2VH55FIQ'],
+    :secret_access_key => ENV['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']
+    }
+  }
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # Paperclip.options[:command_path] = "/usr/local/bin/"
 
   config.cache_classes = false
 

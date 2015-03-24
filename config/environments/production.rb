@@ -10,6 +10,15 @@ Rails.application.configure do
   authentication:       'plain',
   enable_starttls_auto: true  }
   
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['wecardvids'],
+    :access_key_id => ENV['AKIAIORHWDJJ2VH55FIQ'],
+    :secret_access_key => ENV['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']
+  }
+}
+  config.action_mailer.default_url_options = { :host => 'we-card.heroku.com' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true

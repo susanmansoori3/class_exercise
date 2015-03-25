@@ -13,7 +13,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => ENV['wecarduploads'],
+    :bucket => ENV['S3_BUCKET_NAME'],
     :access_key_id => ENV['S3_ACCESS_KEY'],
     :secret_access_key => ENV['SECRET_KEY']
   }

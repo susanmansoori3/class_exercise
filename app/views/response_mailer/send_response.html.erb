@@ -4,5 +4,5 @@
   <%= @greeting %> <%= @response.invitee_name %>, you've been invited to record a video.
 <br />
   Click on the following link to upload:
-  <%= link_to 'Upload Video', invitation_response_path(@response.invitation, @response) %> 
+  <%= link_to 'Upload Video', invitation_response_url(@response.invitation, @response) %> 
 </p>

@@ -7,7 +7,7 @@ class ResponsesController < ApplicationController
 
   def create
   	@invitation = Invitation.where(id:params[:invitation_id]).first
-    response = Response.new(params.require(:response).permit(:invitee_name, :invitee_email))
+    response = Response.new(params.require(:response).permit(:invitee_name, :invitee_email, :video))
     response.invitation = @invitation
     if response.save 
       ResponseMailer.send_response(response).deliver

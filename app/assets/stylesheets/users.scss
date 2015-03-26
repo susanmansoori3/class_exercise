@@ -3,22 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-// .index {
-// 	height: 600px;
-// 	width: 100%;
-// 	background-color: pink;
-// }
-
-h1 {
-	text-align: center;
-
-}
-
-h2 {
-	text-align: center;
-
-}
-
 .btn {
 	margin-right: 0;
 	margin-left: 0;
@@ -40,243 +24,178 @@ h2 {
 	background-color: white;
 }
 
-
-// .header-bottom-grid1 {
-// 	background: #fc8f8a;
-// 	margin-right: 2%;
-// 	width: 100px;
-// 	height: 100px;
-// 	box-sizing: border-box;
-// 	text-align: center;
-// 	float: left;
-// 	positon: relative;
-// 	bottom: 30px;
-// 	display: inline-block;
-// }
-
-// .header-bottom-grid2 {
-// 	background: #d58afc;
-// 	margin-right: 2%;
-// 	width: 100px;
-// 	height: 100px;
-// 	box-sizing: border-box;
-// 	text-align: center;
-// 	float: left;
-// 	position: absolute;
-// 	bottom: 30px;
-// 	display: inline-block;
-// }
-
-// .header-bottom-grid3 {
-// 	background: #8ae3fc;
-// 	margin-right: 2%;
-// 	width: 100px;
-// 	height: 100px;
-// 	box-sizing: border-box;
-// 	text-align: center;
-// 	float: left;
-// 	position: absolute;
-// 	bottom: 30px;
-// 	display: inline-block;
-// }
-
-
-
-
-
-
-// @mixin border-radius($radius) {
-// 	-webkit-border-radius: $radius; //safari
-// 	-moz-border-radius: $radius; //mozilla
-// 	-ms-border-radius: $radius; //internet explorer
-// 	border-radius: $radius;
-
-// }
-
-// .border-party {
-// 	border: 2px solid black;
-// }
-
-
-// $basewidth: 600px;
-// $maincolor: #859DC6;
-// $mainfont: 'Roboto Slab', serif;
-
-
-body {
-	background-image: url(video.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-// .main {
-// 	background-color: white;
-// 	margin: auto 0;
-// 	width: $basewidth /960px *100%;
-// 	font-family: $mainfont;
-// 	@include border-radius(15px);
-// }
-
-// .painting {
-// 	background-color: darken($maincolor, 50%);
-// 	color: lighten($maincolor, 20%);
-// }
-
-// .details {
-// 	background-color: $maincolor;
-// 	@extend .border-party;
-// }
-
-#formContainer{
-    width:288px;
-    height:321px;
-    margin:0 auto;
-    position:relative;
-
-    -moz-perspective: 800px;
-    -webkit-perspective: 800px;
-    perspective: 800px;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
-
 body{
 	margin: 0;
 	padding: 0;
-	background: #fff;
+	width: 100%;
+}
 
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 55px;
+	text-align: center;
 	color: #fff;
-	font-family: Arial;
-	font-size: 12px;
+	margin: 0;
+	padding: 0;
 }
 
-.body{
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(gradient.jpg);
-	background-size: cover;
-	-webkit-filter: blur(5px);
-	z-index: 0;
+h2 {
+   font-family:"Arvo";
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+	padding: 0;
 }
 
-.grad{
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
 	z-index: 1;
-	opacity: 0.7;
+	position: relative;
 }
 
-.header{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
-	z-index: 2;
+
+
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+a.lpanel:hover{ color: #fff; }
+a.rpanel:hover{ color: #fff; }
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+
+#header { 
+	width: 100%; 
+	background: url('../img/header-bg.png'); 
+	height: 80px; 	
+	position: fixed;
+	margin-top: 30px;
 }
 
-.header div{
+#nav { width: 410px; float: right; margin-top: 20px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
 	float: left;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 35px;
-	font-weight: 200;
+	padding-left: 21px;
 }
 
-.header div span{
-	color: #5379fa !important;
-}
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1;  }
 
-.login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(50% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
-	z-index: 2;
-}
 
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-}
 
-.login input[type=password]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes {   
+ font-family: 'Goudy Bookletter 1911', serif;
+   font-weight: normal;
+   font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
 }
+   
+ .author_name_white { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }  
+ .author_name_gray { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }  
+ .quotes_container { width: 800px; margin: 0 auto; }
+#christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
+#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto;  display: block; position: relative; top: -38px; }
+#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -54px; left: -102px; }
+#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -33px;  right: -100px; }
 
-.login input[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
+
+
+/*= BUTTONS
+--------------------------------------------------------*/
+
+button.btn-know { 
+	padding: 15px 47px; 
+	margin: 40px 38.8%;
+	text-align: center;
+	border: 4px solid #fff; 
+	color: #fff; 
+	background: transparent; 
+	font-size: 19px;
 	cursor: pointer;
-	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
+	text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 
-.login input[type=button]:hover{
-	opacity: 0.8;
+.btn-know:hover { background: #fff; color: transparent; }
+ul.built { list-style: none; margin: 0 auto; width: 730px; }
+.built li img{ float: left; padding-right: 34px; }
+
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+#slide1, #slide2{ width: 100%; }
+#slide1{
+	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
 }
 
-.login input[type=button]:active{
-	opacity: 0.6;
+#slide2{
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
 }
 
-.login input[type=text]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+#slide3{
+	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 170px 0 0 0;	
+	background-size: cover;
 }
 
-.login input[type=password]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+#slide4{
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+	padding: 200px 0;
 }
 
-.login input[type=button]:focus{
-	outline: none;
-}
-
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+#slide5{
+	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	height: 200px;
+	margin: 0 auto;
+	padding: 250px 0;
+	color: #fff;
+	background-size: cover;
 }
 
 
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  a { text-decoration: none; color: #fff;  }

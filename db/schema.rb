@@ -27,18 +27,8 @@ ActiveRecord::Schema.define(version: 20150325232615) do
 
   add_index "invitations", ["user_id"], name: "index_invitations_on_user_id", using: :btree
 
-  create_table "photos", force: :cascade do |t|
-    t.string   "caption"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-  end
-
   create_table "responses", force: :cascade do |t|
-    t.string   "video_id"
+    t.string   "description"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "invitee_name"

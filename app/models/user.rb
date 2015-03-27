@@ -26,7 +26,8 @@ class User < ActiveRecord::Base
   #here comes delayed video processing using delayed_paperclip
   process_in_background :photo, :processing_image_url => "/images/loading.gif" 
 
-  # validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
+  validates_attachment_content_type :photo, :content_type => /\A*\Z/
+
 
 
   has_secure_password

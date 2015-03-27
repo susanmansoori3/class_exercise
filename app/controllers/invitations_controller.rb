@@ -31,7 +31,7 @@ class InvitationsController < ApplicationController
   end
 
    def show
-    @response = Response.find(params[:id])
+    # @response = Response.find(params[:id])
     @invitation = Invitation.find(params[:id])
     @user = User.find(current_user.id) 
 

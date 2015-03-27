@@ -3,7 +3,13 @@
     <div class="dashboard">
       <h1>DASHBOARD</h1>
 
-      <%= image_tag @user.photo.url(:medium) %>
+      <video controls>
+        <source src="<%= @user.photo.url(:mp4video) %>" type="video/mp4">
+        <source src="<%= @user.photo.url(:oggvideo) %>" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+
       </br>
 
 <%= link_to 'New Project', new_invitation_path %>

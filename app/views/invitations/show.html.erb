@@ -26,4 +26,8 @@
 
 <%= link_to 'Add Collaborator', new_invitation_response_path(@invitation) %>
 
-<%= image_tag @response.video.url %>
+<% @invitation.responses.each do |r| %>
+
+<%= image_tag r.video.url %>
+
+<% end %>

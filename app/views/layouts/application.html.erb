@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>WeCard</title>
-<br />
-  <% if current_user != nil %>
-Hi <%= current_user.first_name %>
-<%= button_to "Log out", sessions_path, method: :delete %>
-<% else %>
-<%= button_to "Sign up", new_user_path, method: :get %>
-<% end %>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-  
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+  </head>
 
+  <body>
 
-<body>
+    <%= yield %>
 
-<!-- Trouble shooting to find the current value of the ID so that you know which one is logged in. -->
-
-<%#= session["user_id"].inspect %>
-
-
-
-<%= yield %>
-
-</body>
+  </body>
 </html>

@@ -1,32 +1,47 @@
-<div class = "containerInv">
-  <%= render 'navbar' %>
-    <div class="dashboard">
-      <h1>DASHBOARD</h1>
-
-      <video controls>
-        <source src="<%= @user.photo.url(:mp4video) %>" type="video/mp4">
-        <source src="<%= @user.photo.url(:oggvideo) %>" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
+<div class = "dashboard">
+  <h1>DASHBOARD</h1>
 
 
-      </br>
+  <div class="dasboardbody">
 
-<%= link_to 'New Project', new_invitation_path %>
+    <video controls>
+      <source src="<%= @user.photo.url(:mp4video) %>" type="video/mp4">
+      <source src="<%= @user.photo.url(:oggvideo) %>" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    </br>
 
-      <table class="table table-striped">
-  <tbody>
-    <% @user.invitations.each do |i| %>
-      <tr>
-        <td><%= link_to i.title, invitation_path(i) %></td>
-        <td><%= i.description %></td>
-        <td><%= i.recipient %></td>
-        <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
-        <td><%= button_to 'Delete', invitation_path(i), method: :delete %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <%= link_to 'New Project', new_invitation_path %>
+      <div class="invitationout">
+        <h2>My WeCards</h2>
+        <div class="table">
+        <table class = "table table-striped">
+          <thead>
+            <tr>
+              <th>TITLE</th>
+              <th>DESCRIPTION</th>
+              <th>RECIPIENT</th>
+              <th>ACTIONS</th>
+              <th colspan="8"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @user.invitations.each do |i| %>
+              <tr>
+                  <td><%= link_to i.title, invitation_path(i) %></td>
+                  <td><%= i.description %></td>
+                  <td><%= i.recipient %></td>
+                  <!--actions-->
+                  <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
+                  <td><%= button_to 'Delete', invitation_path(i), method: :delete %></td>
+              <% end %>
+              </tr>
+          </tbody>
+        </div>
+        </table>
+      </div>
 
-    </div>
+  </div>
+
 </div>
+

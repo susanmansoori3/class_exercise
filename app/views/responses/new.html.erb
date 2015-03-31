@@ -1,18 +1,30 @@
 <%= form_for [@invitation, @response] do |f| %>
-
+<div id='form_fields'>
+  <div id='template'>
   <br />
     <div class="field">
     <%= f.label :invitee_name %><br>
     <%= f.text_field :invitee_name %>
   </div>
+
   <br />
     <div class="field">
     <%= f.label :invitee_email %><br>
     <%= f.text_field :invitee_email %>
   </div>
   <br />
-  <div class="actions">
-    <%= f.submit %>
   </div>
-  
+</div>
+
+  <div class="actions">
+    
+
+    <input type='button' id='new_invitee'>+</input>
+  </div>
+
+<!--   <%= fields_for :questions do |builder| %>
+    <%= render 'add_invitee_field', :f => builder %>
+  <% end %> -->
+  <%= f.submit "Submit" %>
 <% end %>
+

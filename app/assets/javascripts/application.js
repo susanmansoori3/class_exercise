@@ -2,7 +2,7 @@
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
@@ -12,12 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.accordion.js"></script>
+function remove_fields (link) {
+	$(link).previous("input[type=hidden]").value = "1";
+	$(link).up(".fields").hide();
+}

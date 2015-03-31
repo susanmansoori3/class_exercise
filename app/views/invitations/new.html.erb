@@ -1,26 +1,5 @@
   <h1>INVITE</h1>
 
-<%#= render 'form' %>
+<%= render 'form' %>
 
 <%#= link_to 'Back to Dashboard', user_path(:id => @user.id) %>
-
-<%= form_for(@invitation) do |f| %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <br />
-    <div class="field">
-    <%= f.label :recipient %><br>
-    <%= f.text_field :recipient %>
-  </div>
-  <br />
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

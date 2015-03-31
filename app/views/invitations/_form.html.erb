@@ -20,6 +20,12 @@
     <%= f.text_field :recipient %>
   </div>
   <br />
+
+  <%= f.fields_for :responses do |builder| %>
+    Name: <%= builder.text_field :invitee_name %><br />
+    Email: <%= builder.text_field :invitee_email %><hr />
+  <% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

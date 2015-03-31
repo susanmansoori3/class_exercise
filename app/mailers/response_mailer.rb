@@ -8,7 +8,6 @@ class ResponseMailer < ApplicationMailer
   def send_response(response)
     @greeting = "Hi"
     @response = response
-    mail to: "suzanmeryam@gmail.com"
-    # mail(to: @invitee_email, subject: 'You\'ve been invited')
+    mail(to: @response.invitee_email, subject: 'You\'ve been invited')
   end
 end

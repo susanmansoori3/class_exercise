@@ -10,16 +10,16 @@
 		<div class="login">
 
         <%= form_for @user, :url => users_path, :html => { :multipart => true } do |f| %>
-                      <% flash.each do |name, msg| -%>
-            <%= content_tag :div, msg, class: name %>
-            <% end %>
+                <% flash.each do |name, msg| -%>
+                <%= content_tag :div, msg, class: name %>
+                <% end %>
                 <%= f.text_field :first_name, placeholder: "first name" %><br /><br />
                 <%= f.text_field :last_name, placeholder: "last name" %><br /><br />
                 <%= f.text_field :email, placeholder: "email" %><br />
                 <%= f.password_field :password, placeholder: "password" %><br />
-                <%= f.password_field :password_confirmation, placeholder: "password confirmation" %>
-                <%= f.file_field :photo %>
-                                <%= f.submit "SAVE"%>
+                <%= f.password_field :password_confirmation, placeholder: "password confirmation" %><br />
+                <%= f.file_field :photo %><br />
+                <%= f.submit "Sign Up"%>
         <% end %>
 
 

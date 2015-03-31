@@ -10,11 +10,13 @@ class InvitationsController < ApplicationController
 
   def edit
     @invitation = Invitation.where(id: params[:id]).first
+    # Build one
+    @invitation.responses.build
   end
 
   def update
     invitation = Invitation.where(id: params[:id]).first
-    invitation.update(params.require(:invitation).permit(:title, :description, :invitee_name, :invitee_email))
+    invitation.update(params.require(:invitation).permit(:title, :description, responses_attributes: [:invitee_name, :invitee_email, :id]))
     redirect_to user_path(current_user)
   end
 

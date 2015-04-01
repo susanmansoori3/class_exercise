@@ -14,6 +14,7 @@
     <%= link_to 'New Project', new_invitation_path %>
       <div class="invitationout">
         <h2>My WeCards</h2>
+        <br />
         <div class="table-responsive">
         <table class = "table table-hover">
           <thead>
@@ -28,7 +29,7 @@
           <tbody>
             <% @user.invitations.each do |i| %>
               <tr>
-                  <td><%= link_to i.title, invitation_path(i) %></td>
+                  <td><%= button_to i.title, invitation_path(i), method: :get %></td>
                   <td><%= i.description %></td>
                   <td><%= i.recipient %></td>
                   <!--actions-->

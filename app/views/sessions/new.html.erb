@@ -26,9 +26,10 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				
+					
 				<nav id="nav">
 					<ul>
+
 						<li class="current"><a href="index.html">Welcome</a></li>
 						<li class="submenu">
 							<a href="">Projects</a>
@@ -49,13 +50,14 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="../users/new" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
 
 		<!-- Banner -->
-			<section id="banner">
+<section id="banner">
+
 
 				<!--
 					".inner" is set up as an inline-block so it automatically expands
@@ -63,84 +65,57 @@
 					automatically wrap lines, so be sure to use line breaks where
 					appropriate (<br />).
 				-->
-				<div class="inner">
+				<div class="loginner">
+				<%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %>
+  <% flash.each do |name, msg| -%>
+  <%= content_tag :div, msg, class: name %>  
+  <% end %>
+    <%= f.text_field :email, placeholder: "EMAIL" %><br />
+    <%= f.password_field :password, placeholder: "PASSWORD" %><br />
+    <%= f.submit "Login" %>
+<% end %>
+<br/>
 
-					<header>
-						<h2>WeCard</h2>
-					</header>
-					<p>Invite. <strong>Record. </strong>Send.
-					<br />
+<%= link_to 'New user? Create an account here', new_user_path %>	
 
-					<br />
-					<a href="http://html5up.net"></a>-</p>
-					<footer>
-						<ul class="buttons vertical">
-							<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-						</ul>
-					</footer>
 
 				</div>
 
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
 			</section>
 
 		<!-- Main -->
 			<article id="main">
 
-				<header class="special container">
-					<span class="icon fa-bar-chart-o"></span>
-					<h2>Personal <strong>video </strong>greeting cards
-					<br />
-					</h2>
-					<p>Choose your collaborators.<strong><br />Upload videos.<br /></strong> Send the group greeting to that special someone.
-					<br />
 
 				</header>
 
 
 
-		<!-- CTA -->
-			<section id="cta">
 
-				<header>
-					<h2>Ready to send <strong>something</strong>?</h2>
-					<p>Sign Up</p>
-				</header>
-				<footer>
-					<ul class="buttons">
-						<li><a href="#" class="button special">LOGIN</a></li>
-						<li><a href="#" class="button">GUEST RESPONSE</a></li>
-					</ul>
-				</footer>
-
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-
-				<ul class="icons">
-					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-				</ul>
 
 				<ul class="copyright">
 					<li>&copy; WeCard</li>
 				</ul>
 
-			</footer>
+	
 
 	</body>
 </html>
 
-			<%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %>
-  <% flash.each do |name, msg| -%>
-  <%= content_tag :div, msg, class: name %>  
-  <% end %>
-    <%= f.text_field :email %><br />
-    <%= f.password_field :password %><br />
-    <%= f.submit "Login" %>
-<% end %>
-
-<%= link_to 'New user? Create an account here', new_user_path %>

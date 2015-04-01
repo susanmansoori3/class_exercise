@@ -6,7 +6,7 @@
 	<%# end %>
 
 <div class="actions">
-	<%= form_for @invitation, :url => users_path, :html => { :multipart => true } do |f| %>
+	<%= form_for @invitation, :html => { :multipart => true } do |f| %>
 		<%= f.file_field :video %>
 		<%= f.submit "SAVE"%>
 

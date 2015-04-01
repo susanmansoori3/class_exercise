@@ -16,7 +16,7 @@ class InvitationsController < ApplicationController
 
   def update
     invitation = Invitation.where(id: params[:id]).first
-    invitation.update(params.require(:invitation).permit(:title, :description, responses_attributes: [:invitee_name, :invitee_email, :id]))
+    invitation.update(params.require(:invitation).permit(:id, :title, :description, responses_attributes: [:invitee_name, :invitee_email, :id]))
     redirect_to user_path(current_user)
   end
 

@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :invitations, only: [:index, :edit, :update, :destroy, :new, :create, :show] do
       resources :responses, only: [:new, :create, :show]
     end 
-  # resources :responses, only [:show]
+  resources :responses
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

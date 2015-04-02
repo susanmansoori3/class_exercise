@@ -1,5 +1,5 @@
 <%= form_for [@invitation, @response] do |f| %>
-<div id='form_fields'>
+<!-- <div id='form_fields'> -->
   <div id='template'>
   <br />
     <div class="field">
@@ -18,13 +18,10 @@
 
   <div class="actions">
     
+<!-- TIMOTHY -->
+<!--     <input type='button' id='new_invitee'>+</input>
+  </div> -->
 
-    <input type='button' id='new_invitee'>+</input>
-  </div>
-
-<!--   <%= fields_for :questions do |builder| %>
-    <%= render 'add_invitee_field', :f => builder %>
-  <% end %> -->
   <%= f.submit "Submit" %>
 <% end %>
 

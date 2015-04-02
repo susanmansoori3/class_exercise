@@ -11,7 +11,8 @@ class InvitationsController < ApplicationController
   def edit
     @invitation = Invitation.where(id: params[:id]).first
     # Build one
-    @invitation.responses.build
+    # LORIN
+    # @invitation.responses.build
   end
 
   def update

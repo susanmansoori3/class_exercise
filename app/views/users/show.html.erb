@@ -10,10 +10,16 @@
       Your browser does not support the video tag.
     </video>
     </br>
+    </br>
 
-    <%= link_to 'New Project', new_invitation_path %>
+
+    <%= button_to 'New Project', new_invitation_path, method: :get %>
+        <br />
+    <br />
       <div class="invitationout">
+
         <h2>My WeCards</h2>
+            <br />
         <br />
         <div class="table-responsive">
         <table class = "table table-hover">
@@ -33,7 +39,7 @@
                   <td><%= i.description %></td>
                   <td><%= i.recipient %></td>
                   <!--actions-->
-                  <td><%= link_to 'Edit', edit_invitation_path(i) %></td>
+                  <td><%= button_to 'Edit', edit_invitation_path(i), method: :get %></td>
                   <td><%= button_to 'Delete', invitation_path(i), method: :delete %></td>
               <% end %>
               </tr>

@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'rails_layout'
 
- gem "better_errors" 
+gem "better_errors" 
 
 gem 'figaro'
 

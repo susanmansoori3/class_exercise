@@ -18,24 +18,131 @@ Email: <%= @invitation.recipient_email %>
     <h4>Your collaborators are:  </h2>
     
     <table class="table table-striped">
-  		<% @invitation.responses.each do |r| %>
+    		<% @invitation.responses.each do |r| %>
 
-  		<tr>
-  			<td>Person 1 Name: <%= r.invitee_name %></td>
-    		<td>Person 1 Email: <%= r.invitee_email %></td>
-  		</tr>
-
+    		<tr>
+    			<td>Person 1 Name: <%= r.invitee_name %></td>
+      		<td>Person 1 Email: <%= r.invitee_email %></td>
+    		</tr>
   		<% end %>
 
-
-<video controls>
-      <source src="<%= @response.video.url(:mp4video) %>" type="video/mp4">
-      <source src="<%= @response.video.url(:oggvideo) %>" type="video/ogg">
-      Your browser does not support the video tag.
-    </video>
+<figure id="video_player">
+  <div id="video_container">
+  <video controls poster="http://demosthenes.info/assets/images/vid-glacier.jpg">
+    <source src="<%= @invitation.responses[0].video.url(:mp4video) %>" type="video/mp4">
+    <source src="<%= @invitation.responses[0].video.url(:oggvideo) %>" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+</div>
+<figcaption>
+<% @invitation.responses.each do |r| %>
+  <a href="<%= r.video.url(:mp4video) %>" class="currentvid">
+  <!-- alternate text (alt) -->
+    <img src="<%= r.video.url(:preview) %>" alt="<%= r.invitee_name %>">
+  </a>
+<% end %>
+</figcaption>
+</figure>
 
 
 </table>
+
+<script type="text/javascript">
+  var video_player = document.getElementById("video_player");
+video = video_player.getElementsByTagName("video")[0],
+video_links = video_player.getElementsByTagName("figcaption")[0],
+source = video.getElementsByTagName("source"),
+link_list = [],
+vidDir = "",
+currentVid = 0,
+allLnks = video_links.children,
+lnkNum = allLnks.length;
+video.removeAttribute("controls");
+video.removeAttribute("poster");
+
+(function() {
+  function playVid(index) {
+    video_links.children[index].classList.add("currentvid");
+    source[0].src = vidDir + link_list[index] + ".mp4";  
+    source[1].src = vidDir + link_list[index] + ".ogg";
+    currentVid = index;
+    video.load();
+    video.play();
+  }
+
+  for (var i=0; i<lnkNum; i++) {
+    var filename = allLnks[i].href;
+    console.log(filename);
+    //pulls without the .mp4
+    link_list[i] = filename.substring(0, filename.lastIndexOf("."));
+    // link_list[i] = filename.match(/([^\/]+)(?=\.\w+$)/)[0];
+  //when people click a link, allows index
+    (function(index){
+      allLnks[i].onclick = function(i){
+        i.preventDefault();  
+        //turn off playback of all videos
+        for (var i=0; i<lnkNum; i++) {
+          allLnks[i].classList.remove("currentvid");
+        }
+        //plays the video that was chosen
+        playVid(index);
+      }    
+  })(i);
+}
+//when the currently playing video ends
+video.addEventListener('ended', function () {
+    //stop the currently playing video
+    allLnks[currentVid].classList.remove("currentvid");
+    //find what the id is for the next video that should play
+    if ((currentVid + 1) >= lnkNum) { nextVid = 0 } else { nextVid = currentVid+1 }
+    //play it
+    playVid(nextVid);
+})
+//controls are only there depending on mouse over
+video.addEventListener('mouseenter', function() {
+    video.setAttribute("controls","true");
+})
+
+video.addEventListener('mouseleave', function() {
+    video.removeAttribute("controls");
+})
+
+var indexOf = function(needle) {
+    if(typeof Array.prototype.indexOf === 'function') {
+        indexOf = Array.prototype.indexOf;
+    } else {
+        indexOf = function(needle) {
+            var i = -1, index = -1;
+      for(i = 0; i < this.length; i++) {
+                if(this[i] === needle) {
+                    index = i;
+                    break;
+                }}
+            return index;
+        };}
+    return indexOf.call(this, needle);
+};
+
+var focusedLink = document.activeElement;
+index = indexOf.call(allLnks, focusedLink);
+  
+document.addEventListener('keydown', function(e) {
+  if (index) {
+    var focusedElement = document.activeElement;
+    if (e.keyCode == 40 || e.keyCode == 39) { // down or right cursor
+      var nextNode = focusedElement.nextElementSibling;
+      if (nextNode) { nextNode.focus(); } else { video_links.firstElementChild.focus(); }
+    }
+    if (e.keyCode == 38 || e.keyCode == 37) { // up or left cursor
+      var previousNode = focusedElement.previousElementSibling;
+      if (previousNode) { previousNode.focus(); } else { video_links.lastElementChild.focus(); }
+    }
+  }
+});
+
+})();  
+
+</script>
 
 <%= link_to 'Add Collaborator', new_invitation_response_path(@invitation) %>
 <!-- 

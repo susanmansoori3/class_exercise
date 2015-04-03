@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.visit_happened.subject
   #
   def visit_happened(name)
-    @greeting = "Hi"
+    @greeting = "Greetings!"
     @name = name
      mail to: "suzanmeryam@gmail.com", subject: "test_email"
   end
@@ -17,7 +17,7 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.welcome.subject
   #
   def welcome
-    @greeting = "Hi"
+    @greeting = "Greetings!"
 
     mail to: "to@example.org"
   end

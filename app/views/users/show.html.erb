@@ -1,24 +1,19 @@
 <html>
-<body class="dash">
+<body>
 <div class = "dashboard">
 
 <%= render 'navbar' %>   
     </br>
     </br>
-    </br>
+
   <h1>Dashboard</h1>
-   </br>
-    </br>
 
-  <div class="dasboardbody">
-
-    <video controls>
+  <div class="dashboardbody">
+<!--    <video controls>
       <source src="<%= @user.photo.url(:mp4video) %>" type="video/mp4">
       <source src="<%= @user.photo.url(:oggvideo) %>" type="video/ogg">
       Your browser does not support the video tag.
-    </video>
-    </br>
-    </br>
+    </video>  -->
 
 
     <%= button_to 'New Project', new_invitation_path, method: :get %>
@@ -27,8 +22,7 @@
       <div class="invitationout">
 
         <h2>My Cards</h2>
-            <br />
-        <br />
+
         <div class="table-responsive">
         <table class = "table">
           <thead>
@@ -36,8 +30,6 @@
               <th>TITLE</th>
               <th>DESCRIPTION</th>
               <th>RECIPIENT</th>
-              <th>ACTIONS</th>
-              <th colspan="8"></th>
             </tr>
           </thead>
           <tbody>

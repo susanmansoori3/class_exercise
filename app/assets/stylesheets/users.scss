@@ -8,19 +8,36 @@
 
 	.invitationout {
 	background-color: #FCFAF2;
+	width: 90%;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 20px;
 
 	}
 
 	.dashboard {
 	background-image: url('/assets/upfeathers.png');
-	margin: 0 px;
-
-
-
-
-
-
+	margin: 0 auto;
+	text-align: center;
 	}
+
+
+#invitationout th {
+	font-size: 16px;
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
+
+#invitationout {
+	width: 100%;
+}
+
+#invitationout th {
+	font-size: 16px;
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
 
 	body, #skel-layers-wrapper {
 		background: #f3f6fa;

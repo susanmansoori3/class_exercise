@@ -41,6 +41,12 @@ class InvitationsController < ApplicationController
 
   end
 
+  def view
+    @invitation = Invitation.find(params[:id])
+
+  end
+
+
   def create
     invitation = Invitation.new(params.require(:invitation).permit(:title, :description, :invitee_name, :invitee_email, :recipient, :recipient_email ))
     

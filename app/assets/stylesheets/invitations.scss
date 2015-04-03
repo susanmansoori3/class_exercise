@@ -4,6 +4,14 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+body{
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
 
 #video_player { 
   display: table; line-height: 0;

@@ -5,9 +5,14 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-.actions {
+	.actions {
+		margin: 0 auto;
+	}
+
+	#template .field {
+	width: 300px;
 	margin: 0 auto;
-}
+	}
 
 	body, #skel-layers-wrapper {
 		background: #f3f6fa;
@@ -990,4 +995,9 @@
 		#sidePanel .indent-5 {
 			display: inline-block;
 			width: 5em;
+		}
+
+		.actions {
+	 	width: 300px;
+	 	margin: 0 auto;
 		}

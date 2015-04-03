@@ -1,5 +1,15 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+	.login {
+	width: 300px;
+	margin: 0 auto;
+
+	}
+
+	.invitationout {
+	background-color: #FCFAF2;
+
+	}
 
 	.dashboard {
 	background-image: url('/assets/upfeathers.png');
@@ -989,5 +999,60 @@
 		}
 
 		.dashboard h1 {
-		font-size: 100px;
+		font-size: 70px;
 		}
+
+
+		/* NAVBAR */
+
+		.navbar1 {
+	background-color: black;
+	opacity: .8;
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	padding: 1%;
+	color: black;
+	margin: 0 auto;
+	height: 10px;
+	font-size: 16px;
+}
+
+.navbarLogo {
+	float: left;
+	padding-bottom: 2px;
+	display: inline-block;
+	color: white;
+	font-size: 18px;
+	font-style: normal;
+	text-transform: none;
+}
+
+.navbarLogo a {
+	color: white;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+.navBarButton {
+	display: inline;
+	background: transparent;
+	color: white;
+	padding: 0px 5px;
+	border-right: 1px solid white;
+}
+
+.navBarButton a {
+	color: white;
+}
+.navbarLogo a:hover, .navBarButton a:hover {
+	color: gray;
+}
+.navBarButton.logout {
+	border-right: 0;
+}
+
+#header.alt {
+	background-color: black;
+	opacity: .65;
+}
+
+

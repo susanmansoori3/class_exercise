@@ -10,4 +10,10 @@ class ResponseMailer < ApplicationMailer
     @response = response
     mail(to: @response.invitee_email, subject: 'You\'ve been invited')
   end
+
+  def finished(invitation)
+    @greeting ="Hi"
+    @invitation = invitation
+    mail(to: @invitation.recipient_email, subject: 'SURPRISE! Here\'s a special greeting just for you!')
+  end
 end

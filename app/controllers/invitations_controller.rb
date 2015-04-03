@@ -37,11 +37,12 @@ class InvitationsController < ApplicationController
     # @response = Response.find(params[:id])
     @invitation = Invitation.find(params[:id])
     @user = User.find(current_user.id) 
+    @response = Response.find(params[:id])
 
   end
 
   def create
-    invitation = Invitation.new(params.require(:invitation).permit(:title, :description, :invitee_name, :invitee_email))
+    invitation = Invitation.new(params.require(:invitation).permit(:title, :description, :invitee_name, :invitee_email, :recipient, :recipient_email ))
     
     #@user becomes parent object 
     #array syntax to add to the invitation model and invitation becomes child of that parent

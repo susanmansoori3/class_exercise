@@ -1,13 +1,18 @@
-<h1>GUEST RESPONSE</h1>
+	<br />
+		<br />
+			<br />
+
+<h1> YOUR RESPONSE</h1>
 
     <%# if %>
 	<%#= javascript_include_tag "webcam.js" %>
 
 	<%# end %>
-
+	<br />
+		<br />
 <div class="actions">
-	<%= form_for @invitation, :html => { :multipart => true } do |f| %>
-		<%= f.file_field :video %>
+	<%= form_for @response, :html => { :multipart => true } do |f| %>
+		 <%= f.file_field :video %>
 		<br />
 		<br />
 		<%= f.submit "SAVE"%>

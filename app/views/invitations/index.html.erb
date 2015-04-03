@@ -1,2 +1,15 @@
+<%= render 'navbar' %>  
+
+<br />
+<br />
+<br />
+
+<% @invitations.each do |i| %>
+	<%= link_to "Show #{i.recipient}!", i %><br />
+	<% i.responses.each do |r| %>
+		<%= r.invitee_email %><br />
+	<% end %>
+<% end %>
+
 
 <%= link_to 'New Project', new_invitation_path %>

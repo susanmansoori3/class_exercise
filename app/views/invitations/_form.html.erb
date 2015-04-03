@@ -21,6 +21,13 @@
   </div>
   <br />
 
+
+    <div class="field">
+    <%= f.label :recipient_email %><br>
+    <%= f.text_field :recipient_email %>
+  </div>
+        <br />
+
   <%= f.fields_for :responses do |builder| %>
     Name: <%= builder.text_field :invitee_name %><br />
     Email: <%= builder.text_field :invitee_email %><hr />

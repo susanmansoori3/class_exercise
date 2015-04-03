@@ -29,6 +29,4 @@ has_attached_file :video,  :styles => {
 
   validates_attachment_content_type :video, :content_type => /\A*\Z/
 
-
-
 end

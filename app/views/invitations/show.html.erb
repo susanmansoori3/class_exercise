@@ -1,14 +1,19 @@
+<%= render 'navbar' %>  
 
-
-    
-
-<h1>WeCard Project Name:<%= @invitation.title %></h1>
+<br />
+<br />
 <br />
 
-	<h4>This WeCard is for <%= @invitation.recipient %></h2>        
-    <h4><%= @invitation.description %></h3>
+<h1>WeCard Project Name:<%= @invitation.title %></h1>
+   <h4>Description: <%= @invitation.description %></h3>
+Email: <%= @invitation.recipient_email %>
+<br />
 
-      <br />
+	<h4>This WeCard is for <%= @invitation.recipient_email %></h2>
+  <br />        
+ 
+
+    <br />
     <br />
     <h4>Your collaborators are:  </h2>
     
@@ -22,12 +27,20 @@
 
   		<% end %>
 
+
+<video controls>
+      <source src="<%= @response.video.url(:mp4video) %>" type="video/mp4">
+      <source src="<%= @response.video.url(:oggvideo) %>" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+
 </table>
 
 <%= link_to 'Add Collaborator', new_invitation_response_path(@invitation) %>
-
+<!-- 
 <% @invitation.responses.each do |r| %>
 
-<%= image_tag r.video.url %>
+<%= image_tag r.video.url %> -->
 
 <% end %>

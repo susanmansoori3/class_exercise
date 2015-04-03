@@ -1,6 +1,14 @@
+<html>
+<body class="dash">
 <div class = "dashboard">
-  <h1>DASHBOARD</h1>
 
+<%= render 'navbar' %>   
+    </br>
+    </br>
+    </br>
+  <h1>Dashboard</h1>
+   </br>
+    </br>
 
   <div class="dasboardbody">
 
@@ -18,11 +26,11 @@
     <br />
       <div class="invitationout">
 
-        <h2>My WeCards</h2>
+        <h2>My Cards</h2>
             <br />
         <br />
         <div class="table-responsive">
-        <table class = "table table-hover">
+        <table class = "table">
           <thead>
             <tr>
               <th>TITLE</th>
@@ -35,7 +43,7 @@
           <tbody>
             <% @user.invitations.each do |i| %>
               <tr>
-                  <td><%= button_to i.title, invitation_path(i), method: :get %></td>
+                  <td class = "button special"><%= button_to i.title, invitation_path(i), method: :get %></td>
                   <td><%= i.description %></td>
                   <td><%= i.recipient %></td>
                   <!--actions-->
@@ -51,4 +59,6 @@
   </div>
 
 </div>
+</body>
+</html>
 

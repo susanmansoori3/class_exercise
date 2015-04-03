@@ -50,10 +50,11 @@ class ResponsesController < ApplicationController
 
   def update 
     response = Response.where(id: params[:id]).first
-    response.update(params.require(:response).permit(:video))
     if response.invitation.how_many_responses_left == 0 
       ResponseMailer.finished(response.invitation).deliver
     end
+    response.update(params.require(:response).permit(:video))
+
     redirect_to user_path(current_user)
   
   end

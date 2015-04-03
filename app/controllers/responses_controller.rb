@@ -46,6 +46,8 @@ class ResponsesController < ApplicationController
     #user = User.find(params[:id]) figure out how to include user who sent it
   end
 
+  #cleaner code with deliver now
+
   def update 
     response = Response.where(id: params[:id]).first
     response.update(params.require(:response).permit(:video))

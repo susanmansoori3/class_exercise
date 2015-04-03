@@ -435,7 +435,7 @@
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		background: none;
+		background: #83d3c9;
 		border: solid 1px;
 		color: inherit;
 		cursor: pointer;
@@ -1077,6 +1077,7 @@
 #header.alt {
 	background-color: black;
 	opacity: .65;
+	padding: 10%;
 }
 
 

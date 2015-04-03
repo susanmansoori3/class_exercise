@@ -1,4 +1,4 @@
-class Invitation < ActiveRecord::Base
+	class Invitation < ActiveRecord::Base
 
 	belongs_to :user
 	has_many :responses, :dependent => :destroy

@@ -35,7 +35,7 @@
           <tbody>
             <% @user.invitations.each do |i| %>
               <tr>
-                  <td class = "button special"><%= button_to i.title, invitation_path(i), method: :get %></td>
+                  <td><%= button_to i.title, invitation_path(i), method: :get %></td>
                   <td><%= i.description %></td>
                   <td><%= i.recipient %></td>
                   <!--actions-->

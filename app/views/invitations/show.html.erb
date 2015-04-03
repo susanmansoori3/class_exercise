@@ -4,17 +4,21 @@
 <br />
 <br />
 <body>  
-<h1>WeCard Project Name:<%= @invitation.title %></h1>
-   <h4>Description: <%= @invitation.description %></h3>
-Email: <%= @invitation.recipient_email %>
-<br />
 
-	<h4>This WeCard is for <%= @invitation.recipient_email %></h2>
-  <br />        
+<h1>WeCard Project Name: <%= @invitation.title %></h1>
+   <h4>Description: <%= @invitation.description %></h3>
+  <h4>This WeCard is for <%= @invitation.recipient %><br />
+Email: <%= @invitation.recipient_email %></h4>
+
+
+      
     
-    <h4>Your collaborators are:  </h2>
-    
-    <table class="table table-striped">
+
+
+
+    <h2>Your collaborators are:  </h2>
+
+    <table class="table">
     		<% @invitation.responses.each do |r| %>
 
     		<tr>
@@ -23,6 +27,7 @@ Email: <%= @invitation.recipient_email %>
     		</tr>
   		<% end %>
 
+</table>
+<br />
 <%= link_to 'Add Collaborator', new_invitation_response_path(@invitation) %>
-
 </body>

@@ -1,0 +1,13 @@
+<h1></h1>
+
+<p>
+  <%= @greeting %> <%= @response.invitee_name %>, this is your personal video greeting card from 
+  <% @invitation.responses.each do |r| %>
+  <%= r.invitee_name %>
+
+  <% end %>
+
+<br />
+  Click on the following link to view:
+  <%= link_to 'My WeCard', invitation_response_url(@response.invitation, @response) %> 
+</p>

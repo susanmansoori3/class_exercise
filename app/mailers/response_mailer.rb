@@ -14,6 +14,6 @@ class ResponseMailer < ApplicationMailer
   def finished(invitation)
     @greeting ="Hey there!"
     @invitation = invitation
-    mail(to: @invitation.recipient_email, subject: 'SURPRISE! Here\'s a special greeting just for you!')
+    mail(to: @invitation.recipient_email, subject: 'SURPRISE! Here\'s a special greeting just for you.')
   end
 end

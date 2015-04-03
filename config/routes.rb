@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   get 'response/show'
 
-  root to: 'sessions#new'
+  root to: 'users#index'
   get '/sessions' => 'sessions#destroy', as: 'logout'
   #this could also be: because it's only ever ONE session make it resource!!
   resource :sessions, only: [:new, :create, :destroy]

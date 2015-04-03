@@ -1,0 +1,4850 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+/* line 11, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+body, #skel-layers-wrapper {
+  background: #f3f6fa;
+}
+
+/* line 15, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+body.is-loading * {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* line 28, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+body, input, select, textarea {
+  color: #7c8081;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+}
+
+/* line 37, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #3fb1a3;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* line 48, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+a:hover {
+  border-bottom-color: transparent;
+}
+
+/* line 52, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+strong, b {
+  font-weight: 400;
+}
+
+/* line 56, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+p, ul, ol, dl, table, blockquote {
+  margin: 0 0 2em 0;
+}
+
+/* line 60, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* line 68, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+/* line 74, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* line 79, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+h3 {
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
+}
+
+/* line 84, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 90, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 96, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+hr {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 102, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+blockquote {
+  border-left: solid 0.5em rgba(124, 128, 129, 0.2);
+  font-style: italic;
+  padding: 1em 0 1em 2em;
+}
+
+/* Section/Article */
+/* line 110, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 114, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.major {
+  padding-bottom: 2em;
+}
+
+/* line 118, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special {
+  margin-bottom: 5em;
+  padding-top: 7em;
+  position: relative;
+  text-align: center;
+}
+
+/* line 125, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special:before, header.special:after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 7px;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.75em;
+  width: 43%;
+}
+
+/* line 136, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special:before {
+  left: 0;
+}
+
+/* line 140, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special:after {
+  right: 0;
+}
+
+/* line 144, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special h2 {
+  margin-bottom: 0;
+}
+
+/* line 148, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special h2 + p {
+  margin-bottom: 0;
+  padding-top: 1.5em;
+}
+
+/* line 153, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special .icon {
+  cursor: default;
+  height: 7em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 100%;
+}
+
+/* line 163, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+header.special .icon:before {
+  font-size: 3.5em;
+  opacity: 0.35;
+}
+
+/* line 168, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+footer > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 172, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+footer.major {
+  padding-top: 3em;
+}
+
+/* Form */
+/* line 178, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border: solid 1px rgba(124, 128, 129, 0.2);
+  color: inherit;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  width: 100%;
+  outline: 0;
+}
+
+/* line 202, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #83d3c9;
+}
+
+/* line 209, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  line-height: 1em;
+}
+
+/* line 215, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+/* line 222, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 227, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 232, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 237, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.formerize-placeholder {
+  color: rgba(124, 128, 129, 0.5) !important;
+}
+
+/* Image */
+/* line 243, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image {
+  border: 0;
+  position: relative;
+}
+
+/* line 248, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image:before {
+  background: url("images/overlay.png");
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 258, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image.fit {
+  display: block;
+}
+
+/* line 262, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* line 267, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image.featured {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+/* line 272, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.image.featured img {
+  display: block;
+  width: 100%;
+}
+
+/* List */
+/* line 281, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+/* line 286, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ol.default li {
+  padding-left: 0.25em;
+}
+
+/* line 290, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.default {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+/* line 295, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.default li {
+  padding-left: 0.5em;
+}
+
+/* line 299, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.icons {
+  cursor: default;
+}
+
+/* line 303, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+/* line 309, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+/* line 313, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.featured-icons {
+  cursor: default;
+  margin: -0.75em 0 0 0;
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 321, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.featured-icons li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 328, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.featured-icons li .icon {
+  display: inline-block;
+  font-size: 6.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  width: 1em;
+}
+
+/* line 336, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons {
+  cursor: default;
+}
+
+/* line 340, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons:last-child {
+  margin-bottom: 0;
+}
+
+/* line 344, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+/* line 349, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons li:first-child {
+  padding: 0;
+}
+
+/* line 353, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+/* line 358, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+ul.buttons.vertical li:first-child {
+  padding: 0;
+}
+
+/* Table */
+/* line 364, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table {
+  width: 100%;
+}
+
+/* line 368, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table.default {
+  width: 100%;
+}
+
+/* line 372, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table.default tbody tr {
+  border-bottom: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 376, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* line 380, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table.default th {
+  font-weight: 400;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+}
+
+/* line 386, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+table.default thead {
+  background: #7c8081;
+  color: #fff;
+}
+
+/* Button */
+/* line 393, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background: none;
+  border: solid 1px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0 0.75em;
+  line-height: 3.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 423, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+  background: rgba(188, 202, 206, 0.15);
+  border-color: inherit;
+}
+
+/* line 431, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"].special,
+input[type="submit"].special,
+input[type="reset"].special,
+.button.special {
+  background: #83d3c9;
+  border-color: #83d3c9;
+  color: white !important;
+}
+
+/* line 440, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"].special:hover,
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+.button.special:hover {
+  background: #96dad1 !important;
+  border-color: #96dad1 !important;
+}
+
+/* line 448, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"].fit,
+input[type="submit"].fit,
+input[type="reset"].fit,
+.button.fit {
+  width: 100%;
+}
+
+/* line 455, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+input[type="button"].small,
+input[type="submit"].small,
+input[type="reset"].small,
+.button.small {
+  font-size: 0.7em;
+  min-width: 14em;
+  padding: 0.5em 0;
+}
+
+/* Wrapper */
+/* line 466, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+/* line 471, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style1 {
+  padding: 0;
+}
+
+/* line 475, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style2 {
+  background-color: #83d3c9;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
+  color: white;
+}
+
+/* line 484, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style2 .button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* line 488, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style2 .button.special {
+  background: white;
+  border-color: white;
+  color: #83d3c9 !important;
+}
+
+/* line 494, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style2 .button.special:hover {
+  border-color: inherit !important;
+  color: white !important;
+}
+
+/* line 499, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style3 {
+  background: white;
+  color: inherit;
+}
+
+/* line 504, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.wrapper.style4 {
+  background: white;
+  color: inherit;
+  padding: 4em;
+}
+
+/* Header */
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 517, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  color: inherit;
+  cursor: default;
+  font-size: 0.8em;
+  left: 0;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/* line 531, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* line 536, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header h1 span {
+  font-weight: 300;
+}
+
+/* line 540, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav {
+  letter-spacing: 0.075em;
+  position: absolute;
+  right: 1.5em;
+  text-transform: uppercase;
+  top: 0.75em;
+}
+
+/* line 548, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+/* line 553, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li > ul {
+  display: none;
+}
+
+/* line 557, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li a {
+  border: solid 1px transparent;
+  color: inherit;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.6em 0.75em;
+  text-decoration: none;
+}
+
+/* line 566, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li input[type="button"],
+#header nav ul li input[type="submit"],
+#header nav ul li input[type="reset"],
+#header nav ul li .button {
+  font-size: 1em;
+  min-width: 0;
+  width: auto;
+}
+
+/* line 575, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li.submenu > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 584, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li.submenu > a:before {
+  content: '\f107';
+  margin-right: 0.65em;
+}
+
+/* line 589, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li.active > a, #header nav ul li:hover > a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: rgba(188, 202, 206, 0.15);
+}
+
+/* line 598, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header nav ul li.current > a {
+  font-weight: 900;
+}
+
+/* line 602, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header.reveal {
+  -moz-animation: reveal-header 0.5s;
+  -webkit-animation: reveal-header 0.5s;
+  -o-animation: reveal-header 0.5s;
+  -ms-animation: reveal-header 0.5s;
+  animation: reveal-header 0.5s;
+}
+
+/* line 610, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 2em 2.5em;
+  position: absolute;
+}
+
+/* line 623, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header.alt nav {
+  right: 2.5em;
+  top: 1.75em;
+}
+
+/* line 628, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+  border: solid 1px;
+}
+
+/* Dropotron */
+/* line 634, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  line-height: 2.25em;
+  min-width: 13em;
+  padding: 1em 0;
+  text-transform: uppercase;
+  margin-top: calc(-1em + 1px);
+}
+
+/* line 644, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron.level-0 {
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+/* line 650, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron.level-0:before {
+  border-bottom: solid 0.5em #fff;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  content: '';
+  left: 0.75em;
+  position: absolute;
+  top: -0.45em;
+}
+
+/* line 660, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron > li {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 664, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron > li > a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 1em;
+  border: 0;
+}
+
+/* line 676, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron > li:hover > a {
+  background: #83d3c9;
+  color: white;
+}
+
+/* line 681, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.dropotron > li:first-child {
+  border-top: 0;
+}
+
+/* Banner */
+@-moz-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 692, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  cursor: default;
+  padding: 6em 0;
+  text-align: center;
+}
+
+/* line 705, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner {
+  -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+  -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+  -o-animation: reveal-banner 1s 0.25s ease-in-out;
+  -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+  animation: reveal-banner 1s 0.25s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: rgba(52, 27, 43, 0.5);
+  color: white;
+  display: inline-block;
+  opacity: 0;
+  padding: 3em;
+  text-align: center;
+}
+
+/* line 724, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner header {
+  display: inline-block;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  margin: 0 0 2em 0;
+  padding: 3px 0 3px 0;
+}
+
+/* line 732, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner header h2 {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 744, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 750, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 756, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#banner .inner footer {
+  margin: 2em 0 0 0;
+}
+
+/* Main */
+/* line 762, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#main {
+  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 7em 0;
+}
+
+/* line 770, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#main > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 774, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#main .sidebar section {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  margin: 3em 0 0 0;
+  padding: 3em 0 0 0;
+}
+
+/* line 780, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#main .sidebar section:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 786, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+body.index #main {
+  padding-top: 5em;
+}
+
+/* CTA */
+/* line 792, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#cta {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: top left, top right, top left, bottom center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  padding: 5em;
+  text-align: center;
+}
+
+/* line 804, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#cta header {
+  margin-bottom: 2em;
+}
+
+/* Footer */
+/* line 810, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#footer {
+  background: #e8eef4;
+  color: #7c8081;
+  padding: 5em 5em 10em 5em;
+  text-align: center;
+}
+
+/* line 817, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#footer .copyright {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+/* line 822, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#footer .copyright a {
+  color: inherit;
+}
+
+/* line 826, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#footer .copyright li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: dotted 1px;
+}
+
+/* line 833, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#footer .copyright li:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Layer */
+/* line 841, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 850, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 859, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 0.75em;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 873, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 0 0 4px 4px;
+  content: '';
+  height: 30px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+/* line 885, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#sideButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 894, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#sideButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 903, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#sideButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 1em;
+  height: 40px;
+  left: 10px;
+  line-height: 40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 11px;
+  width: 60px;
+  z-index: 1;
+}
+
+/* line 917, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#sideButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 2px;
+  content: '';
+  height: 40px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+}
+
+/* line 928, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel,
+#sidePanel {
+  background: #1c2021;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+/* line 937, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel nav,
+#sidePanel nav {
+  padding: 0.25em 0.5em 1em 0.5em;
+}
+
+/* line 942, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .link,
+#sidePanel .link {
+  border: 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+  color: inherit;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+/* line 954, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .link.depth-0,
+#sidePanel .link.depth-0 {
+  font-weight: 900;
+}
+
+/* line 959, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .link:first-child,
+#sidePanel .link:first-child {
+  border-top: 0;
+}
+
+/* line 964, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .indent-1,
+#sidePanel .indent-1 {
+  display: inline-block;
+  width: 1em;
+}
+
+/* line 970, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .indent-2,
+#sidePanel .indent-2 {
+  display: inline-block;
+  width: 2em;
+}
+
+/* line 976, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .indent-3,
+#sidePanel .indent-3 {
+  display: inline-block;
+  width: 3em;
+}
+
+/* line 982, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .indent-4,
+#sidePanel .indent-4 {
+  display: inline-block;
+  width: 4em;
+}
+
+/* line 988, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+#topPanel .indent-5,
+#sidePanel .indent-5 {
+  display: inline-block;
+  width: 5em;
+}
+
+/* line 995, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+thead tr {
+  text-align: center;
+}
+
+/* line 999, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/invitations.scss */
+.field {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+/* line 8, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.actions {
+  margin: 0 auto;
+}
+
+/* line 12, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#template .field {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 17, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+body, #skel-layers-wrapper {
+  background: #f3f6fa;
+}
+
+/* line 21, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+body.is-loading * {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* line 34, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+body, input, select, textarea {
+  color: #7c8081;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+}
+
+/* line 43, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #3fb1a3;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* line 54, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+a:hover {
+  border-bottom-color: transparent;
+}
+
+/* line 58, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+strong, b {
+  font-weight: 400;
+}
+
+/* line 62, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+p, ul, ol, dl, table, blockquote {
+  margin: 0 0 2em 0;
+}
+
+/* line 66, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* line 74, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+/* line 80, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* line 85, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+h3 {
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
+}
+
+/* line 90, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 96, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 102, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+hr {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 108, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+blockquote {
+  border-left: solid 0.5em rgba(124, 128, 129, 0.2);
+  font-style: italic;
+  padding: 1em 0 1em 2em;
+}
+
+/* Section/Article */
+/* line 116, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 120, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.major {
+  padding-bottom: 2em;
+}
+
+/* line 124, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special {
+  margin-bottom: 5em;
+  padding-top: 7em;
+  position: relative;
+  text-align: center;
+}
+
+/* line 131, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special:before, header.special:after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 7px;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.75em;
+  width: 43%;
+}
+
+/* line 142, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special:before {
+  left: 0;
+}
+
+/* line 146, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special:after {
+  right: 0;
+}
+
+/* line 150, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special h2 {
+  margin-bottom: 0;
+}
+
+/* line 154, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special h2 + p {
+  margin-bottom: 0;
+  padding-top: 1.5em;
+}
+
+/* line 159, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special .icon {
+  cursor: default;
+  height: 7em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 100%;
+}
+
+/* line 169, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+header.special .icon:before {
+  font-size: 3.5em;
+  opacity: 0.35;
+}
+
+/* line 174, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+footer > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 178, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+footer.major {
+  padding-top: 3em;
+}
+
+/* Form */
+/* line 184, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border: solid 1px rgba(124, 128, 129, 0.2);
+  color: inherit;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  width: 100%;
+  outline: 0;
+}
+
+/* line 208, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #83d3c9;
+}
+
+/* line 215, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  line-height: 1em;
+}
+
+/* line 221, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+/* line 228, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 233, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 238, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 243, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.formerize-placeholder {
+  color: rgba(124, 128, 129, 0.5) !important;
+}
+
+/* Image */
+/* line 249, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image {
+  border: 0;
+  position: relative;
+}
+
+/* line 254, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image:before {
+  background: url("images/overlay.png");
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 264, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image.fit {
+  display: block;
+}
+
+/* line 268, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* line 273, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image.featured {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+/* line 278, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.image.featured img {
+  display: block;
+  width: 100%;
+}
+
+/* List */
+/* line 287, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+/* line 292, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ol.default li {
+  padding-left: 0.25em;
+}
+
+/* line 296, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.default {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+/* line 301, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.default li {
+  padding-left: 0.5em;
+}
+
+/* line 305, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.icons {
+  cursor: default;
+}
+
+/* line 309, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+/* line 315, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+/* line 319, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.featured-icons {
+  cursor: default;
+  margin: -0.75em 0 0 0;
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 327, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.featured-icons li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 334, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.featured-icons li .icon {
+  display: inline-block;
+  font-size: 6.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  width: 1em;
+}
+
+/* line 342, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons {
+  cursor: default;
+}
+
+/* line 346, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons:last-child {
+  margin-bottom: 0;
+}
+
+/* line 350, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+/* line 355, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons li:first-child {
+  padding: 0;
+}
+
+/* line 359, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+/* line 364, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+ul.buttons.vertical li:first-child {
+  padding: 0;
+}
+
+/* Table */
+/* line 370, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table {
+  width: 100%;
+}
+
+/* line 374, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table.default {
+  width: 100%;
+}
+
+/* line 378, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table.default tbody tr {
+  border-bottom: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 382, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* line 386, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table.default th {
+  font-weight: 400;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+}
+
+/* line 392, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+table.default thead {
+  background: #7c8081;
+  color: #fff;
+}
+
+/* Button */
+/* line 399, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background: none;
+  border: solid 1px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0 0.75em;
+  line-height: 3.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 429, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+  background: rgba(188, 202, 206, 0.15);
+  border-color: inherit;
+}
+
+/* line 437, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"].special,
+input[type="submit"].special,
+input[type="reset"].special,
+.button.special {
+  background: #83d3c9;
+  border-color: #83d3c9;
+  color: white !important;
+}
+
+/* line 446, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"].special:hover,
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+.button.special:hover {
+  background: #96dad1 !important;
+  border-color: #96dad1 !important;
+}
+
+/* line 454, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"].fit,
+input[type="submit"].fit,
+input[type="reset"].fit,
+.button.fit {
+  width: 100%;
+}
+
+/* line 461, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+input[type="button"].small,
+input[type="submit"].small,
+input[type="reset"].small,
+.button.small {
+  font-size: 0.7em;
+  min-width: 14em;
+  padding: 0.5em 0;
+}
+
+/* Wrapper */
+/* line 472, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+/* line 477, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style1 {
+  padding: 0;
+}
+
+/* line 481, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style2 {
+  background-color: #83d3c9;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
+  color: white;
+}
+
+/* line 490, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style2 .button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* line 494, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style2 .button.special {
+  background: white;
+  border-color: white;
+  color: #83d3c9 !important;
+}
+
+/* line 500, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style2 .button.special:hover {
+  border-color: inherit !important;
+  color: white !important;
+}
+
+/* line 505, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style3 {
+  background: white;
+  color: inherit;
+}
+
+/* line 510, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.wrapper.style4 {
+  background: white;
+  color: inherit;
+  padding: 4em;
+}
+
+/* Header */
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 523, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  color: inherit;
+  cursor: default;
+  font-size: 0.8em;
+  left: 0;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/* line 537, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* line 542, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header h1 span {
+  font-weight: 300;
+}
+
+/* line 546, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav {
+  letter-spacing: 0.075em;
+  position: absolute;
+  right: 1.5em;
+  text-transform: uppercase;
+  top: 0.75em;
+}
+
+/* line 554, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+/* line 559, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li > ul {
+  display: none;
+}
+
+/* line 563, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li a {
+  border: solid 1px transparent;
+  color: inherit;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.6em 0.75em;
+  text-decoration: none;
+}
+
+/* line 572, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li input[type="button"],
+#header nav ul li input[type="submit"],
+#header nav ul li input[type="reset"],
+#header nav ul li .button {
+  font-size: 1em;
+  min-width: 0;
+  width: auto;
+}
+
+/* line 581, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li.submenu > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 590, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li.submenu > a:before {
+  content: '\f107';
+  margin-right: 0.65em;
+}
+
+/* line 595, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li.active > a, #header nav ul li:hover > a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: rgba(188, 202, 206, 0.15);
+}
+
+/* line 604, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header nav ul li.current > a {
+  font-weight: 900;
+}
+
+/* line 608, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header.reveal {
+  -moz-animation: reveal-header 0.5s;
+  -webkit-animation: reveal-header 0.5s;
+  -o-animation: reveal-header 0.5s;
+  -ms-animation: reveal-header 0.5s;
+  animation: reveal-header 0.5s;
+}
+
+/* line 616, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 2em 2.5em;
+  position: absolute;
+}
+
+/* line 629, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header.alt nav {
+  right: 2.5em;
+  top: 1.75em;
+}
+
+/* line 634, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+  border: solid 1px;
+}
+
+/* Dropotron */
+/* line 640, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  line-height: 2.25em;
+  min-width: 13em;
+  padding: 1em 0;
+  text-transform: uppercase;
+  margin-top: calc(-1em + 1px);
+}
+
+/* line 650, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron.level-0 {
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+/* line 656, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron.level-0:before {
+  border-bottom: solid 0.5em #fff;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  content: '';
+  left: 0.75em;
+  position: absolute;
+  top: -0.45em;
+}
+
+/* line 666, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron > li {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 670, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron > li > a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 1em;
+  border: 0;
+}
+
+/* line 682, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron > li:hover > a {
+  background: #83d3c9;
+  color: white;
+}
+
+/* line 687, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.dropotron > li:first-child {
+  border-top: 0;
+}
+
+/* Banner */
+@-moz-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 698, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  cursor: default;
+  padding: 6em 0;
+  text-align: center;
+}
+
+/* line 711, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner {
+  -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+  -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+  -o-animation: reveal-banner 1s 0.25s ease-in-out;
+  -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+  animation: reveal-banner 1s 0.25s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: rgba(52, 27, 43, 0.5);
+  color: white;
+  display: inline-block;
+  opacity: 0;
+  padding: 3em;
+  text-align: center;
+}
+
+/* line 730, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner header {
+  display: inline-block;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  margin: 0 0 2em 0;
+  padding: 3px 0 3px 0;
+}
+
+/* line 738, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner header h2 {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 750, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 756, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 762, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#banner .inner footer {
+  margin: 2em 0 0 0;
+}
+
+/* Main */
+/* line 768, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#main {
+  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 7em 0;
+}
+
+/* line 776, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#main > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 780, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#main .sidebar section {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  margin: 3em 0 0 0;
+  padding: 3em 0 0 0;
+}
+
+/* line 786, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#main .sidebar section:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 792, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+body.index #main {
+  padding-top: 5em;
+}
+
+/* CTA */
+/* line 798, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#cta {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: top left, top right, top left, bottom center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  padding: 5em;
+  text-align: center;
+}
+
+/* line 810, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#cta header {
+  margin-bottom: 2em;
+}
+
+/* Footer */
+/* line 816, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#footer {
+  background: #e8eef4;
+  color: #7c8081;
+  padding: 5em 5em 10em 5em;
+  text-align: center;
+}
+
+/* line 823, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#footer .copyright {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+/* line 828, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#footer .copyright a {
+  color: inherit;
+}
+
+/* line 832, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#footer .copyright li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: dotted 1px;
+}
+
+/* line 839, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#footer .copyright li:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Layer */
+/* line 847, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 856, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 865, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 0.75em;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 879, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 0 0 4px 4px;
+  content: '';
+  height: 30px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+/* line 891, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#sideButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 900, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#sideButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 909, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#sideButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 1em;
+  height: 40px;
+  left: 10px;
+  line-height: 40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 11px;
+  width: 60px;
+  z-index: 1;
+}
+
+/* line 923, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#sideButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 2px;
+  content: '';
+  height: 40px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+}
+
+/* line 934, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel,
+#sidePanel {
+  background: #1c2021;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+/* line 943, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel nav,
+#sidePanel nav {
+  padding: 0.25em 0.5em 1em 0.5em;
+}
+
+/* line 948, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .link,
+#sidePanel .link {
+  border: 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+  color: inherit;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+/* line 960, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .link.depth-0,
+#sidePanel .link.depth-0 {
+  font-weight: 900;
+}
+
+/* line 965, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .link:first-child,
+#sidePanel .link:first-child {
+  border-top: 0;
+}
+
+/* line 970, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .indent-1,
+#sidePanel .indent-1 {
+  display: inline-block;
+  width: 1em;
+}
+
+/* line 976, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .indent-2,
+#sidePanel .indent-2 {
+  display: inline-block;
+  width: 2em;
+}
+
+/* line 982, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .indent-3,
+#sidePanel .indent-3 {
+  display: inline-block;
+  width: 3em;
+}
+
+/* line 988, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .indent-4,
+#sidePanel .indent-4 {
+  display: inline-block;
+  width: 4em;
+}
+
+/* line 994, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+#topPanel .indent-5,
+#sidePanel .indent-5 {
+  display: inline-block;
+  width: 5em;
+}
+
+/* line 1000, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/response.scss */
+.actions {
+  width: 300px;
+  margin: 0 auto;
+}
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+/* line 5, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+body, #skel-layers-wrapper {
+  background: #f3f6fa;
+}
+
+/* line 9, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+body.is-loading * {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* line 22, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+body, input, select, textarea {
+  color: #7c8081;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+}
+
+/* line 31, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #3fb1a3;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* line 42, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+a:hover {
+  border-bottom-color: transparent;
+}
+
+/* line 46, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+strong, b {
+  font-weight: 400;
+}
+
+/* line 50, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+p, ul, ol, dl, table, blockquote {
+  margin: 0 0 2em 0;
+}
+
+/* line 54, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* line 62, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+/* line 68, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* line 73, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+h3 {
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
+}
+
+/* line 78, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 84, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 90, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+hr {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 96, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+blockquote {
+  border-left: solid 0.5em rgba(124, 128, 129, 0.2);
+  font-style: italic;
+  padding: 1em 0 1em 2em;
+}
+
+/* Section/Article */
+/* line 104, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 108, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.major {
+  padding-bottom: 2em;
+}
+
+/* line 112, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special {
+  margin-bottom: 5em;
+  padding-top: 7em;
+  position: relative;
+  text-align: center;
+}
+
+/* line 119, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special:before, header.special:after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 7px;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.75em;
+  width: 43%;
+}
+
+/* line 130, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special:before {
+  left: 0;
+}
+
+/* line 134, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special:after {
+  right: 0;
+}
+
+/* line 138, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special h2 {
+  margin-bottom: 0;
+}
+
+/* line 142, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special h2 + p {
+  margin-bottom: 0;
+  padding-top: 1.5em;
+}
+
+/* line 147, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special .icon {
+  cursor: default;
+  height: 7em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 100%;
+}
+
+/* line 157, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+header.special .icon:before {
+  font-size: 3.5em;
+  opacity: 0.35;
+}
+
+/* line 162, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+footer > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 166, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+footer.major {
+  padding-top: 3em;
+}
+
+/* Form */
+/* line 172, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border: solid 1px rgba(124, 128, 129, 0.2);
+  color: inherit;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  width: 100%;
+  outline: 0;
+}
+
+/* line 196, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #83d3c9;
+}
+
+/* line 203, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  line-height: 1em;
+}
+
+/* line 209, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+/* line 216, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 221, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 226, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 231, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.formerize-placeholder {
+  color: rgba(124, 128, 129, 0.5) !important;
+}
+
+/* Image */
+/* line 237, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image {
+  border: 0;
+  position: relative;
+}
+
+/* line 242, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image:before {
+  background: url("images/overlay.png");
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 252, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image.fit {
+  display: block;
+}
+
+/* line 256, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* line 261, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image.featured {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+/* line 266, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.image.featured img {
+  display: block;
+  width: 100%;
+}
+
+/* List */
+/* line 275, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+/* line 280, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ol.default li {
+  padding-left: 0.25em;
+}
+
+/* line 284, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.default {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+/* line 289, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.default li {
+  padding-left: 0.5em;
+}
+
+/* line 293, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.icons {
+  cursor: default;
+}
+
+/* line 297, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+/* line 303, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+/* line 307, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.featured-icons {
+  cursor: default;
+  margin: -0.75em 0 0 0;
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 315, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.featured-icons li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 322, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.featured-icons li .icon {
+  display: inline-block;
+  font-size: 6.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  width: 1em;
+}
+
+/* line 330, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons {
+  cursor: default;
+}
+
+/* line 334, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons:last-child {
+  margin-bottom: 0;
+}
+
+/* line 338, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+/* line 343, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons li:first-child {
+  padding: 0;
+}
+
+/* line 347, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+/* line 352, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+ul.buttons.vertical li:first-child {
+  padding: 0;
+}
+
+/* Table */
+/* line 358, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table {
+  width: 100%;
+}
+
+/* line 362, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table.default {
+  width: 100%;
+}
+
+/* line 366, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table.default tbody tr {
+  border-bottom: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 370, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* line 374, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table.default th {
+  font-weight: 400;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+}
+
+/* line 380, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+table.default thead {
+  background: #7c8081;
+  color: #fff;
+}
+
+/* Button */
+/* line 387, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background: none;
+  border: solid 1px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0 0.75em;
+  line-height: 3.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 417, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+  background: rgba(188, 202, 206, 0.15);
+  border-color: inherit;
+}
+
+/* line 425, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"].special,
+input[type="submit"].special,
+input[type="reset"].special,
+.button.special {
+  background: #83d3c9;
+  border-color: #83d3c9;
+  color: white !important;
+}
+
+/* line 434, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"].special:hover,
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+.button.special:hover {
+  background: #96dad1 !important;
+  border-color: #96dad1 !important;
+}
+
+/* line 442, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"].fit,
+input[type="submit"].fit,
+input[type="reset"].fit,
+.button.fit {
+  width: 100%;
+}
+
+/* line 449, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+input[type="button"].small,
+input[type="submit"].small,
+input[type="reset"].small,
+.button.small {
+  font-size: 0.7em;
+  min-width: 14em;
+  padding: 0.5em 0;
+}
+
+/* Wrapper */
+/* line 460, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+/* line 465, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style1 {
+  padding: 0;
+}
+
+/* line 469, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style2 {
+  background-color: #83d3c9;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
+  color: white;
+}
+
+/* line 478, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style2 .button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* line 482, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style2 .button.special {
+  background: white;
+  border-color: white;
+  color: #83d3c9 !important;
+}
+
+/* line 488, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style2 .button.special:hover {
+  border-color: inherit !important;
+  color: white !important;
+}
+
+/* line 493, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style3 {
+  background: white;
+  color: inherit;
+}
+
+/* line 498, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.wrapper.style4 {
+  background: white;
+  color: inherit;
+  padding: 4em;
+}
+
+/* Header */
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 511, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  color: inherit;
+  cursor: default;
+  font-size: 0.8em;
+  left: 0;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/* line 525, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* line 530, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header h1 span {
+  font-weight: 300;
+}
+
+/* line 534, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav {
+  letter-spacing: 0.075em;
+  position: absolute;
+  right: 1.5em;
+  text-transform: uppercase;
+  top: 0.75em;
+}
+
+/* line 542, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+/* line 547, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li > ul {
+  display: none;
+}
+
+/* line 551, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li a {
+  border: solid 1px transparent;
+  color: inherit;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.6em 0.75em;
+  text-decoration: none;
+}
+
+/* line 560, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li input[type="button"],
+#header nav ul li input[type="submit"],
+#header nav ul li input[type="reset"],
+#header nav ul li .button {
+  font-size: 1em;
+  min-width: 0;
+  width: auto;
+}
+
+/* line 569, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li.submenu > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 578, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li.submenu > a:before {
+  content: '\f107';
+  margin-right: 0.65em;
+}
+
+/* line 583, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li.active > a, #header nav ul li:hover > a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: rgba(188, 202, 206, 0.15);
+}
+
+/* line 592, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header nav ul li.current > a {
+  font-weight: 900;
+}
+
+/* line 596, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header.reveal {
+  -moz-animation: reveal-header 0.5s;
+  -webkit-animation: reveal-header 0.5s;
+  -o-animation: reveal-header 0.5s;
+  -ms-animation: reveal-header 0.5s;
+  animation: reveal-header 0.5s;
+}
+
+/* line 604, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 2em 2.5em;
+  position: absolute;
+}
+
+/* line 617, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header.alt nav {
+  right: 2.5em;
+  top: 1.75em;
+}
+
+/* line 622, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+  border: solid 1px;
+}
+
+/* Dropotron */
+/* line 628, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  line-height: 2.25em;
+  min-width: 13em;
+  padding: 1em 0;
+  text-transform: uppercase;
+  margin-top: calc(-1em + 1px);
+}
+
+/* line 638, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron.level-0 {
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+/* line 644, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron.level-0:before {
+  border-bottom: solid 0.5em #fff;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  content: '';
+  left: 0.75em;
+  position: absolute;
+  top: -0.45em;
+}
+
+/* line 654, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron > li {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 658, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron > li > a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 1em;
+  border: 0;
+}
+
+/* line 670, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron > li:hover > a {
+  background: #83d3c9;
+  color: white;
+}
+
+/* line 675, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+.dropotron > li:first-child {
+  border-top: 0;
+}
+
+/* Banner */
+@-moz-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 686, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  cursor: default;
+  padding: 6em 0;
+  text-align: center;
+}
+
+/* line 699, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner {
+  -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+  -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+  -o-animation: reveal-banner 1s 0.25s ease-in-out;
+  -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+  animation: reveal-banner 1s 0.25s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: rgba(52, 27, 43, 0.5);
+  color: white;
+  display: inline-block;
+  opacity: 0;
+  padding: 3em;
+  text-align: center;
+}
+
+/* line 718, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner header {
+  display: inline-block;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  margin: 0 0 2em 0;
+  padding: 3px 0 3px 0;
+}
+
+/* line 726, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner header h2 {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 738, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 744, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 750, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#banner .loginner footer {
+  margin: 2em 0 0 0;
+}
+
+/* Main */
+/* line 756, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#main {
+  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 7em 0;
+}
+
+/* line 764, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#main > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 768, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#main .sidebar section {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  margin: 3em 0 0 0;
+  padding: 3em 0 0 0;
+}
+
+/* line 774, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#main .sidebar section:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 780, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+body.index #main {
+  padding-top: 5em;
+}
+
+/* CTA */
+/* line 786, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#cta {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: top left, top right, top left, bottom center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  padding: 5em;
+  text-align: center;
+}
+
+/* line 798, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#cta header {
+  margin-bottom: 2em;
+}
+
+/* Footer */
+/* line 804, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#footer {
+  background: #e8eef4;
+  color: #7c8081;
+  padding: 5em 5em 10em 5em;
+  text-align: center;
+}
+
+/* line 811, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#footer .copyright {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+/* line 816, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#footer .copyright a {
+  color: inherit;
+}
+
+/* line 820, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#footer .copyright li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: dotted 1px;
+}
+
+/* line 827, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#footer .copyright li:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Layer */
+/* line 835, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 844, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 853, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 0.75em;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 867, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 0 0 4px 4px;
+  content: '';
+  height: 30px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+/* line 879, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#sideButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 888, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#sideButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 897, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#sideButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 1em;
+  height: 40px;
+  left: 10px;
+  line-height: 40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 11px;
+  width: 60px;
+  z-index: 1;
+}
+
+/* line 911, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#sideButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 2px;
+  content: '';
+  height: 40px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+}
+
+/* line 922, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel,
+#sidePanel {
+  background: #1c2021;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+/* line 931, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel nav,
+#sidePanel nav {
+  padding: 0.25em 0.5em 1em 0.5em;
+}
+
+/* line 936, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .link,
+#sidePanel .link {
+  border: 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+  color: inherit;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+/* line 948, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .link.depth-0,
+#sidePanel .link.depth-0 {
+  font-weight: 900;
+}
+
+/* line 953, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .link:first-child,
+#sidePanel .link:first-child {
+  border-top: 0;
+}
+
+/* line 958, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .indent-1,
+#sidePanel .indent-1 {
+  display: inline-block;
+  width: 1em;
+}
+
+/* line 964, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .indent-2,
+#sidePanel .indent-2 {
+  display: inline-block;
+  width: 2em;
+}
+
+/* line 970, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .indent-3,
+#sidePanel .indent-3 {
+  display: inline-block;
+  width: 3em;
+}
+
+/* line 976, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .indent-4,
+#sidePanel .indent-4 {
+  display: inline-block;
+  width: 4em;
+}
+
+/* line 982, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#topPanel .indent-5,
+#sidePanel .indent-5 {
+  display: inline-block;
+  width: 5em;
+}
+
+/* line 988, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/sessions.scss */
+#header.alt {
+  background-color: black;
+  opacity: .65;
+}
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+/* line 3, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.login {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 9, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.invitationout {
+  background-color: #FCFAF2;
+}
+
+/* line 14, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dashboard {
+  background-image: url("/assets/upfeathers.png");
+}
+
+/* line 18, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+body, #skel-layers-wrapper {
+  background: #f3f6fa;
+}
+
+/* line 22, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+body.is-loading * {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* line 35, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+body, input, select, textarea {
+  color: #7c8081;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+}
+
+/* line 44, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #3fb1a3;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* line 55, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+a:hover {
+  border-bottom-color: transparent;
+}
+
+/* line 59, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+strong, b {
+  font-weight: 400;
+}
+
+/* line 63, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+p, ul, ol, dl, table, blockquote {
+  margin: 0 0 2em 0;
+}
+
+/* line 67, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* line 75, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+/* line 81, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* line 86, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+h3 {
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
+}
+
+/* line 91, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 97, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 103, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+hr {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 109, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+blockquote {
+  border-left: solid 0.5em rgba(124, 128, 129, 0.2);
+  font-style: italic;
+  padding: 1em 0 1em 2em;
+}
+
+/* Section/Article */
+/* line 117, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 121, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.major {
+  padding-bottom: 2em;
+}
+
+/* line 125, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special {
+  margin-bottom: 5em;
+  padding-top: 7em;
+  position: relative;
+  text-align: center;
+}
+
+/* line 132, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special:before, header.special:after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 7px;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.75em;
+  width: 43%;
+}
+
+/* line 143, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special:before {
+  left: 0;
+}
+
+/* line 147, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special:after {
+  right: 0;
+}
+
+/* line 151, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special h2 {
+  margin-bottom: 0;
+}
+
+/* line 155, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special h2 + p {
+  margin-bottom: 0;
+  padding-top: 1.5em;
+}
+
+/* line 160, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special .icon {
+  cursor: default;
+  height: 7em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 100%;
+}
+
+/* line 170, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+header.special .icon:before {
+  font-size: 3.5em;
+  opacity: 0.35;
+}
+
+/* line 175, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+footer > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 179, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+footer.major {
+  padding-top: 3em;
+}
+
+/* Form */
+/* line 185, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border: solid 1px rgba(124, 128, 129, 0.2);
+  color: inherit;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  width: 100%;
+  outline: 0;
+}
+
+/* line 209, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #83d3c9;
+}
+
+/* line 216, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  line-height: 1em;
+}
+
+/* line 222, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+/* line 229, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 234, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 239, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 244, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.formerize-placeholder {
+  color: rgba(124, 128, 129, 0.5) !important;
+}
+
+/* Image */
+/* line 250, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image {
+  border: 0;
+  position: relative;
+}
+
+/* line 255, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image:before {
+  background: url("images/overlay.png");
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 265, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image.fit {
+  display: block;
+}
+
+/* line 269, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* line 274, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image.featured {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+/* line 279, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.image.featured img {
+  display: block;
+  width: 100%;
+}
+
+/* List */
+/* line 288, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+/* line 293, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ol.default li {
+  padding-left: 0.25em;
+}
+
+/* line 297, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.default {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+/* line 302, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.default li {
+  padding-left: 0.5em;
+}
+
+/* line 306, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.icons {
+  cursor: default;
+}
+
+/* line 310, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+/* line 316, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+/* line 320, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.featured-icons {
+  cursor: default;
+  margin: -0.75em 0 0 0;
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 328, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.featured-icons li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 335, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.featured-icons li .icon {
+  display: inline-block;
+  font-size: 6.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  width: 1em;
+}
+
+/* line 343, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons {
+  cursor: default;
+}
+
+/* line 347, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons:last-child {
+  margin-bottom: 0;
+}
+
+/* line 351, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+/* line 356, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons li:first-child {
+  padding: 0;
+}
+
+/* line 360, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+/* line 365, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+ul.buttons.vertical li:first-child {
+  padding: 0;
+}
+
+/* Table */
+/* line 371, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table {
+  width: 100%;
+}
+
+/* line 375, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table.default {
+  width: 100%;
+}
+
+/* line 379, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table.default tbody tr {
+  border-bottom: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 383, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* line 387, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table.default th {
+  font-weight: 400;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+}
+
+/* line 393, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+table.default thead {
+  background: #7c8081;
+  color: #fff;
+}
+
+/* Button */
+/* line 400, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background: none;
+  border: solid 1px;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0 0.75em;
+  line-height: 3.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 430, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+  background: rgba(188, 202, 206, 0.15);
+  border-color: inherit;
+}
+
+/* line 438, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"].special,
+input[type="submit"].special,
+input[type="reset"].special,
+.button.special {
+  background: #83d3c9;
+  border-color: #83d3c9;
+  color: white !important;
+}
+
+/* line 447, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"].special:hover,
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+.button.special:hover {
+  background: #96dad1 !important;
+  border-color: #96dad1 !important;
+}
+
+/* line 455, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"].fit,
+input[type="submit"].fit,
+input[type="reset"].fit,
+.button.fit {
+  width: 100%;
+}
+
+/* line 462, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+input[type="button"].small,
+input[type="submit"].small,
+input[type="reset"].small,
+.button.small {
+  font-size: 0.7em;
+  min-width: 14em;
+  padding: 0.5em 0;
+}
+
+/* Wrapper */
+/* line 473, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+/* line 478, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style1 {
+  padding: 0;
+}
+
+/* line 482, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style2 {
+  background-color: #83d3c9;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
+  color: white;
+}
+
+/* line 491, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style2 .button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* line 495, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style2 .button.special {
+  background: white;
+  border-color: white;
+  color: #83d3c9 !important;
+}
+
+/* line 501, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style2 .button.special:hover {
+  border-color: inherit !important;
+  color: white !important;
+}
+
+/* line 506, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style3 {
+  background: white;
+  color: inherit;
+}
+
+/* line 511, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.wrapper.style4 {
+  background: white;
+  color: inherit;
+  padding: 4em;
+}
+
+/* Header */
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 524, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  color: inherit;
+  cursor: default;
+  font-size: 0.8em;
+  left: 0;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/* line 538, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* line 543, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header h1 span {
+  font-weight: 300;
+}
+
+/* line 547, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav {
+  letter-spacing: 0.075em;
+  position: absolute;
+  right: 1.5em;
+  text-transform: uppercase;
+  top: 0.75em;
+}
+
+/* line 555, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+/* line 560, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li > ul {
+  display: none;
+}
+
+/* line 564, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li a {
+  border: solid 1px transparent;
+  color: inherit;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.6em 0.75em;
+  text-decoration: none;
+}
+
+/* line 573, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li input[type="button"],
+#header nav ul li input[type="submit"],
+#header nav ul li input[type="reset"],
+#header nav ul li .button {
+  font-size: 1em;
+  min-width: 0;
+  width: auto;
+}
+
+/* line 582, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li.submenu > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 591, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li.submenu > a:before {
+  content: '\f107';
+  margin-right: 0.65em;
+}
+
+/* line 596, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li.active > a, #header nav ul li:hover > a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: rgba(188, 202, 206, 0.15);
+}
+
+/* line 605, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header nav ul li.current > a {
+  font-weight: 900;
+}
+
+/* line 609, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header.reveal {
+  -moz-animation: reveal-header 0.5s;
+  -webkit-animation: reveal-header 0.5s;
+  -o-animation: reveal-header 0.5s;
+  -ms-animation: reveal-header 0.5s;
+  animation: reveal-header 0.5s;
+}
+
+/* line 617, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 2em 2.5em;
+  position: absolute;
+}
+
+/* line 630, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header.alt nav {
+  right: 2.5em;
+  top: 1.75em;
+}
+
+/* line 635, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+  border: solid 1px;
+}
+
+/* Dropotron */
+/* line 641, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  line-height: 2.25em;
+  min-width: 13em;
+  padding: 1em 0;
+  text-transform: uppercase;
+  margin-top: calc(-1em + 1px);
+}
+
+/* line 651, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron.level-0 {
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+/* line 657, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron.level-0:before {
+  border-bottom: solid 0.5em #fff;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  content: '';
+  left: 0.75em;
+  position: absolute;
+  top: -0.45em;
+}
+
+/* line 667, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron > li {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+}
+
+/* line 671, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron > li > a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 1em;
+  border: 0;
+}
+
+/* line 683, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron > li:hover > a {
+  background: #83d3c9;
+  color: white;
+}
+
+/* line 688, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dropotron > li:first-child {
+  border-top: 0;
+}
+
+/* Banner */
+@-moz-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal-banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 699, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  cursor: default;
+  padding: 6em 0;
+  text-align: center;
+}
+
+/* line 712, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner {
+  -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+  -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+  -o-animation: reveal-banner 1s 0.25s ease-in-out;
+  -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+  animation: reveal-banner 1s 0.25s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: rgba(52, 27, 43, 0.5);
+  color: white;
+  display: inline-block;
+  opacity: 0;
+  padding: 3em;
+  text-align: center;
+}
+
+/* line 731, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner header {
+  display: inline-block;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  margin: 0 0 2em 0;
+  padding: 3px 0 3px 0;
+}
+
+/* line 739, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner header h2 {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 751, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 757, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 763, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#banner .inner footer {
+  margin: 2em 0 0 0;
+}
+
+/* Main */
+/* line 769, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#main {
+  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 7em 0;
+}
+
+/* line 777, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#main > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 781, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#main .sidebar section {
+  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  margin: 3em 0 0 0;
+  padding: 3em 0 0 0;
+}
+
+/* line 787, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#main .sidebar section:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 793, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+body.index #main {
+  padding-top: 5em;
+}
+
+/* CTA */
+/* line 799, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#cta {
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: top left, top right, top left, bottom center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  padding: 5em;
+  text-align: center;
+}
+
+/* line 811, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#cta header {
+  margin-bottom: 2em;
+}
+
+/* Footer */
+/* line 817, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#footer {
+  background: #e8eef4;
+  color: #7c8081;
+  padding: 5em 5em 10em 5em;
+  text-align: center;
+}
+
+/* line 824, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#footer .copyright {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+/* line 829, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#footer .copyright a {
+  color: inherit;
+}
+
+/* line 833, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#footer .copyright li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: dotted 1px;
+}
+
+/* line 840, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#footer .copyright li:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Layer */
+/* line 848, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 857, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 866, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 0.75em;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 880, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 0 0 4px 4px;
+  content: '';
+  height: 30px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+/* line 892, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#sideButton .toggle {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* line 901, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#sideButton .toggle:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 910, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#sideButton .toggle:before {
+  color: white;
+  content: '\f039';
+  font-size: 1em;
+  height: 40px;
+  left: 10px;
+  line-height: 40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 11px;
+  width: 60px;
+  z-index: 1;
+}
+
+/* line 924, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#sideButton .toggle:after {
+  background: rgba(163, 169, 170, 0.75);
+  border-radius: 2px;
+  content: '';
+  height: 40px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+}
+
+/* line 935, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel,
+#sidePanel {
+  background: #1c2021;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+/* line 944, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel nav,
+#sidePanel nav {
+  padding: 0.25em 0.5em 1em 0.5em;
+}
+
+/* line 949, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .link,
+#sidePanel .link {
+  border: 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+  color: inherit;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+/* line 961, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .link.depth-0,
+#sidePanel .link.depth-0 {
+  font-weight: 900;
+}
+
+/* line 966, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .link:first-child,
+#sidePanel .link:first-child {
+  border-top: 0;
+}
+
+/* line 971, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .indent-1,
+#sidePanel .indent-1 {
+  display: inline-block;
+  width: 1em;
+}
+
+/* line 977, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .indent-2,
+#sidePanel .indent-2 {
+  display: inline-block;
+  width: 2em;
+}
+
+/* line 983, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .indent-3,
+#sidePanel .indent-3 {
+  display: inline-block;
+  width: 3em;
+}
+
+/* line 989, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .indent-4,
+#sidePanel .indent-4 {
+  display: inline-block;
+  width: 4em;
+}
+
+/* line 995, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#topPanel .indent-5,
+#sidePanel .indent-5 {
+  display: inline-block;
+  width: 5em;
+}
+
+/* line 1001, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.dashboard h1 {
+  font-size: 70px;
+}
+
+/* NAVBAR */
+/* line 1008, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navbar1 {
+  background-color: black;
+  opacity: .8;
+  /*border: 2px solid black;
+  border-radius: 10px;*/
+  padding: 1%;
+  color: black;
+  margin: 0 auto;
+  height: 10px;
+  font-size: 16px;
+}
+
+/* line 1020, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navbarLogo {
+  float: left;
+  padding-bottom: 2px;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: none;
+}
+
+/* line 1030, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navbarLogo a {
+  color: white;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+/* line 1035, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navBarButton {
+  display: inline;
+  background: transparent;
+  color: white;
+  padding: 0px 5px;
+  border-right: 1px solid white;
+}
+
+/* line 1043, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navBarButton a {
+  color: white;
+}
+
+/* line 1046, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navbarLogo a:hover, .navBarButton a:hover {
+  color: gray;
+}
+
+/* line 1049, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+.navBarButton.logout {
+  border-right: 0;
+}
+
+/* line 1053, /Users/susanmansoori1/Desktop/wecard4/wecard/app/assets/stylesheets/users.scss */
+#header.alt {
+  background-color: black;
+  opacity: .65;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+
+@import "bootstrap";
+
+
+
+.dashboard {
+	margin: 5px auto;
+	width: 90%;
+	padding: 15px;
+}
+
+
+
+
+

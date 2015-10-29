@@ -18,7 +18,7 @@ Rails.application.configure do
     :secret_access_key => ENV['SECRET_KEY']
   }
 }
-  config.action_mailer.default_url_options = { :host => 'we-card.heroku.com' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
